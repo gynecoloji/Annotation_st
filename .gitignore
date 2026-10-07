@@ -45,3 +45,6 @@ Thumbs.db
 .vscode/
 .idea/
 .ipynb_checkpoints/
+
+# ── Slurm job logs of local runs ──
+_logs/

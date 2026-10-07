@@ -14,8 +14,8 @@ authors:
     family-names: "Wang"
     email: "gynecoloji@gmail.com"
     orcid: "https://orcid.org/0000-0003-3443-5857"
-repository-code: "https://github.com/gynecoloji/annotation_st"
-url: "https://github.com/gynecoloji/annotation_st"
+repository-code: "https://github.com/gynecoloji/Annotation_st"
+url: "https://github.com/gynecoloji/Annotation_st"
 license: MIT
 keywords:
   - spatial transcriptomics

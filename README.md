@@ -1,7 +1,7 @@
 # annotation_st
 
-[![CI](https://github.com/gynecoloji/annotation_st/actions/workflows/ci.yml/badge.svg)](https://github.com/gynecoloji/annotation_st/actions/workflows/ci.yml)
-[![Release](https://img.shields.io/github/v/release/gynecoloji/annotation_st)](https://github.com/gynecoloji/annotation_st/releases/latest)
+[![CI](https://github.com/gynecoloji/Annotation_st/actions/workflows/ci.yml/badge.svg)](https://github.com/gynecoloji/Annotation_st/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/gynecoloji/annotation_st)](https://github.com/gynecoloji/Annotation_st/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](pyproject.toml)
 

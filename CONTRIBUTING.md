@@ -7,7 +7,7 @@ By participating, you agree to abide by the [Code of Conduct](CODE_OF_CONDUCT.md
 
 ## Reporting issues
 
-Open a [GitHub issue](https://github.com/gynecoloji/annotation_st/issues) with:
+Open a [GitHub issue](https://github.com/gynecoloji/Annotation_st/issues) with:
 
 - the `annot-st` command (or Python call) you ran and the config file, with marker-file
   paths if any,
@@ -18,7 +18,7 @@ Open a [GitHub issue](https://github.com/gynecoloji/annotation_st/issues) with:
 ## Development setup
 
 ```bash
-git clone https://github.com/gynecoloji/annotation_st.git
+git clone https://github.com/gynecoloji/Annotation_st.git
 cd annotation_st
 python -m venv .venv && source .venv/bin/activate     # or a conda env with python >= 3.10
 pip install -e ".[test]"
