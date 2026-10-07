@@ -188,8 +188,11 @@ Cells are matched by id. For every label column both tables share the report giv
 agreement, the adjusted Rand index (robust to renumbered clusters), per-label recall /
 precision and the confusion table; numeric columns get a correlation and the largest
 difference. Tables can be `.tsv[.gz]`, `.csv`, `.parquet` or `.h5ad` (`obs`).
-`validation/run_ov_validation.sbatch` runs the whole pipeline on the OV section and
-compares it with the accepted run; see `validation/README.md` for the result.
+The package was validated on the full Xenium 5K OV section against the accepted
+annotation: QC, lineage, CAF, CSC and OCSC scores identical on all 1,083,808 cells, immune
+labels differing only where the reference scripts moved to a revised hand-off scheme; the
+in-memory and spatioloji_s routes reproduce the command-line labels exactly. The validation
+jobs, reports and figures are kept outside the repository.
 
 ## Colours: one scheme for every figure and every dataset
 
@@ -445,10 +448,8 @@ src/annotation_st/
   spatioloji_bridge.py   spatioloji_s objects in, labels and colours back
   cli.py        annot-st
 configs/xenium_ov_5k.yaml   full config for the OV section
-validation/                 real-data validation job and its report
 tools/                      build_marker_references.py, find_literature_evidence.py, reviewed sentences
 tests/                      synthetic Xenium-like data with planted populations
-docs/superpowers/           design spec and implementation plan
 ```
 
 ## Tests

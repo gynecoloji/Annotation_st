@@ -1,9 +1,0 @@
-column	n_shared	n_only_new	n_only_ref	agreement	ari	n_labels_ref	n_labels_new	n_disagree
-leiden	1083808	0	0	1.0	1.0	21	21	0
-lineage	1083808	0	0	1.0	1.0	9	9	0
-cell_type	1083808	0	0	1.0	1.0	12	12	0
-cell_type_fine	1083808	0	0	1.0	1.0	43	43	0
-caf_subtype_cell	1083808	0	0	1.0	1.0	5	5	0
-immune_compartment	1083808	0	0	1.0	1.0	4	4	0
-immune_subtype	1083808	0	0	1.0	1.0	34	34	0
-csc_status	1083808	0	0	1.0	1.0	3	3	0

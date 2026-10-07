@@ -1,5 +1,0 @@
-immune_compartment	n_ref	n_new	n_both	recall	precision	jaccard
-Bcell	28937	28937	28937	1.0	1.0	1.0
-Myeloid	146937	146937	146937	1.0	1.0	1.0
-NA	835106	835106	835106	1.0	1.0	1.0
-TNK	72828	72828	72828	1.0	1.0	1.0

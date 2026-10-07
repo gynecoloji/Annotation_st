@@ -49,5 +49,5 @@ keep a reference, and a test enforces that.
 3. Use [Conventional Commits](https://www.conventionalcommits.org/) in commit messages
    (`feat:`, `fix:`, `docs:`, `refactor:`, `test:`, `chore:`). release-please turns them into
    the changelog and the next version number.
-4. If a change alters labels on the validated OV section, say so in the PR and update
-   `validation/README.md` after re-running `validation/run_ov_validation.sbatch`.
+4. If a change alters labels on the validated OV section, say so in the PR. The validation
+   run folder is kept outside the repository; re-run it before claiming unchanged labels.

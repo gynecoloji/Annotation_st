@@ -48,3 +48,8 @@ Thumbs.db
 
 # ── Slurm job logs of local runs ──
 _logs/
+
+# ── Local-only folders (kept on easley, not in the repository) ──
+validation/
+sbatch/
+docs/superpowers/
