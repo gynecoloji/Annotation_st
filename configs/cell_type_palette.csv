@@ -1,0 +1,75 @@
+label,hex,tier,legend_group
+Tumor_nonCSC,#0c82bf,bright,Tumour epithelium
+CSC_like,#e7e824,bright,Tumour epithelium
+Epithelial_tumor,#55120b,deep,Tumour epithelium
+Epithelial_tumor_cycling,#fe1bf6,bright,Tumour epithelium
+iCAF,#df500c,bright,Fibroblast / CAF
+myCAF,#5ef9f1,bright,Fibroblast / CAF
+apCAF,#4b67fa,bright,Fibroblast / CAF
+FB_unassigned,#0d371a,deep,Fibroblast / CAF
+Fibroblast,#80027c,deep,Fibroblast / CAF
+Ovarian_stroma,#46ac2a,bright,Other stroma
+Endothelial,#ac1cf1,bright,Other stroma
+Lymphatic_EC,#fe93a4,bright,Other stroma
+Pericyte_SMC,#02a9f7,bright,Other stroma
+Mesothelial,#d71f75,bright,Other stroma
+Adipocyte,#65f63d,bright,Other stroma
+Schwann,#cbb94c,bright,Other stroma
+CD8_cytotoxic,#bd7fe8,bright,T cell
+CD8_exhausted,#5cd73c,bright,T cell
+CD8_naive_memory,#b16512,bright,T cell
+CD8_T_unspecified,#15068a,deep,T cell
+CD8_T,#085023,deep,T cell
+CD4_Th_effector,#48d7fe,bright,T cell
+Treg,#fec766,bright,T cell
+Tfh,#06915f,bright,T cell
+CD4_naive_memory,#f94173,bright,T cell
+CD4_T_unspecified,#711a4c,deep,T cell
+CD4_T,#693ad4,deep,T cell
+gdT_MAIT,#c41cbe,bright,T cell
+Proliferating_T,#9df7b0,bright,T cell
+T_NK,#1f6a96,deep,T cell
+NK,#3bc59e,bright,NK cell
+Naive_B,#9262b3,bright,B lineage
+Memory_B,#b5d519,bright,B lineage
+GC_B,#fc6b33,bright,B lineage
+B_cell,#0d2f4f,deep,B lineage
+Proliferating_B,#718516,bright,B lineage
+Plasmablast,#e9a8f8,bright,B lineage
+Plasma,#49dfc7,bright,B lineage
+M1_macrophage,#cc6f9d,bright,Myeloid: macrophage / monocyte
+M2_macrophage,#acf93f,bright,Myeloid: macrophage / monocyte
+TREM2_TAM,#3d9028,bright,Myeloid: macrophage / monocyte
+Hypoxic_TAM,#1770f9,bright,Myeloid: macrophage / monocyte
+Macrophage_unpolarized,#540f22,deep,Myeloid: macrophage / monocyte
+Macrophage,#1c04a6,deep,Myeloid: macrophage / monocyte
+Monocyte_classical,#22cde5,bright,Myeloid: macrophage / monocyte
+Monocyte_nonclassical,#f7a224,bright,Myeloid: macrophage / monocyte
+Monocyte_unspecified,#8901a1,deep,Myeloid: macrophage / monocyte
+Monocyte,#04585c,deep,Myeloid: macrophage / monocyte
+Proliferating_myeloid,#d838f9,bright,Myeloid: macrophage / monocyte
+Osteoclast_like_giant,#fd9cf5,bright,Myeloid: macrophage / monocyte
+Macrophage_Mono,#9b4805,deep,Myeloid: macrophage / monocyte
+mregDC,#b18e15,bright,Myeloid: dendritic cell
+cDC1,#7e55f0,bright,Myeloid: dendritic cell
+cDC2,#20f6a5,bright,Myeloid: dendritic cell
+cDC_unspecified,#522e0b,deep,Myeloid: dendritic cell
+cDC,#3f0390,deep,Myeloid: dendritic cell
+pDC,#ff71bb,bright,Myeloid: dendritic cell
+Dendritic,#137738,deep,Myeloid: dendritic cell
+Neutrophil,#dd6f23,bright,Myeloid: granulocyte
+Mast,#ca8cf5,bright,Myeloid: granulocyte
+Unassigned,#bdbdbd,grey,Unresolved / QC
+Myeloid_spillover_Tumor,#717171,grey,Unresolved / QC
+Myeloid_spillover_Fibroblast,#9c99a3,grey,Unresolved / QC
+Bcell_spillover_Fibroblast,#d6e0e7,grey,Unresolved / QC
+TNK_spillover_Tumor,#85887e,grey,Unresolved / QC
+TNK_spillover_Fibroblast,#a5a89d,grey,Unresolved / QC
+Bcell_spillover_Tumor,#dad1c9,grey,Unresolved / QC
+Immune_mixed,#baadb0,grey,Unresolved / QC
+Myeloid_spillover_Endothelial,#7d7a84,grey,Unresolved / QC
+TNK_spillover_Endothelial,#988f88,grey,Unresolved / QC
+Bcell_spillover_Endothelial,#bdcbc7,grey,Unresolved / QC
+T_NK_unresolved,#d0c3c7,grey,Unresolved / QC
+B_lineage_unresolved,#7a7d73,grey,Unresolved / QC
+Myeloid_unresolved,#a7a4ae,grey,Unresolved / QC

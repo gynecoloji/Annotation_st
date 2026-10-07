@@ -1,0 +1,10 @@
+lineage	n_ref	n_new	n_both	recall	precision	jaccard
+Endothelial	37772	37772	37772	1.0	1.0	1.0
+Epithelial_tumor	514295	514295	514295	1.0	1.0	1.0
+Fibroblast	148982	148982	148982	1.0	1.0	1.0
+Macrophage_Mono	146937	146937	146937	1.0	1.0	1.0
+Mesothelial	140	140	140	1.0	1.0	1.0
+Ovarian_stroma	58481	58481	58481	1.0	1.0	1.0
+Plasma	27047	27047	27047	1.0	1.0	1.0
+T_NK	74718	74718	74718	1.0	1.0	1.0
+Unassigned	75436	75436	75436	1.0	1.0	1.0

@@ -1,0 +1,197 @@
+{
+  "lineage": {
+    "Epithelial_tumor": [
+      "EPCAM",
+      "PAX8",
+      "WT1",
+      "MUC16",
+      "SOX17",
+      "CLDN7",
+      "CDH1",
+      "MUC1",
+      "FOLR1",
+      "ERBB2",
+      "MSLN"
+    ],
+    "Fibroblast": [
+      "PDGFRA",
+      "FAP",
+      "THY1",
+      "COL11A1",
+      "COL5A1",
+      "COL5A2",
+      "FBLN2",
+      "FBLN5",
+      "POSTN",
+      "CTHRC1",
+      "SFRP4",
+      "PI16",
+      "MFAP5",
+      "DPT",
+      "LRRC15",
+      "MMP11",
+      "PRRX1",
+      "LOX",
+      "ASPN",
+      "TWIST2",
+      "CDH11"
+    ],
+    "Pericyte_SMC": [
+      "RGS5",
+      "MCAM",
+      "NOTCH3",
+      "CSPG4",
+      "KCNJ8",
+      "ABCC9",
+      "PDGFRB"
+    ],
+    "Endothelial": [
+      "PECAM1",
+      "CDH5",
+      "CLDN5",
+      "KDR",
+      "PLVAP",
+      "ENG",
+      "TEK",
+      "ERG",
+      "SOX18"
+    ],
+    "Lymphatic_EC": [
+      "PROX1",
+      "FLT4",
+      "PDPN",
+      "PECAM1"
+    ],
+    "T_NK": [
+      "CD3E",
+      "CD3G",
+      "CD2",
+      "CD247",
+      "CD4",
+      "CD8A",
+      "CD8B",
+      "GZMB",
+      "GZMK",
+      "GZMA",
+      "PRF1",
+      "KLRD1",
+      "KLRB1",
+      "FOXP3",
+      "IL2RA",
+      "CTLA4",
+      "PDCD1",
+      "TIGIT",
+      "CCR7",
+      "SELL"
+    ],
+    "B_cell": [
+      "MS4A1",
+      "CD79A",
+      "CD79B",
+      "CD19",
+      "BANK1",
+      "PAX5",
+      "CD22"
+    ],
+    "Plasma": [
+      "MZB1",
+      "XBP1",
+      "PRDM1",
+      "TNFRSF17",
+      "DERL3",
+      "FCRL5",
+      "CD38"
+    ],
+    "Macrophage_Mono": [
+      "CD68",
+      "CD163",
+      "CD14",
+      "FCGR3A",
+      "MRC1",
+      "MSR1",
+      "TREM2",
+      "CSF1R",
+      "ITGAM",
+      "MARCO",
+      "FOLR2",
+      "SIGLEC1"
+    ],
+    "Dendritic": [
+      "CD1C",
+      "CLEC10A",
+      "FCER1A",
+      "CLEC9A",
+      "XCR1",
+      "LAMP3",
+      "LILRA4",
+      "CLEC4C",
+      "IL3RA"
+    ],
+    "Neutrophil": [
+      "CSF3R",
+      "FCGR3B",
+      "CD177"
+    ],
+    "Mast": [
+      "MS4A2",
+      "HDC",
+      "HPGDS",
+      "GATA2",
+      "KIT"
+    ],
+    "Mesothelial": [
+      "UPK3B",
+      "CALB2",
+      "PRG4",
+      "PTGIS",
+      "MSLN"
+    ],
+    "Ovarian_stroma": [
+      "FOXL2",
+      "NR5A1",
+      "STAR",
+      "CYP17A1",
+      "INHA",
+      "AMH",
+      "ARX",
+      "TCF21",
+      "DLK1",
+      "GATA4"
+    ],
+    "Adipocyte": [
+      "PLIN1",
+      "ADIPOQ",
+      "LEP",
+      "PPARG"
+    ],
+    "Schwann": [
+      "MPZ",
+      "SOX10"
+    ]
+  },
+  "lineage_dropped_not_on_panel": {
+    "Epithelial_tumor": [],
+    "Fibroblast": [],
+    "Pericyte_SMC": [],
+    "Endothelial": [],
+    "Lymphatic_EC": [],
+    "T_NK": [],
+    "B_cell": [],
+    "Plasma": [],
+    "Macrophage_Mono": [],
+    "Dendritic": [],
+    "Neutrophil": [],
+    "Mast": [],
+    "Mesothelial": [],
+    "Ovarian_stroma": [],
+    "Adipocyte": [],
+    "Schwann": []
+  },
+  "proliferation": [
+    "MKI67",
+    "TOP2A",
+    "CDK1",
+    "BIRC5",
+    "CCNB1"
+  ]
+}

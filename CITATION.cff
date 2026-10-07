@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using these metadata."
+title: "annotation_st: config-driven cell annotation for Xenium spatial transcriptomics"
+abstract: >-
+  A Python package that turns a documented cell-annotation workflow for imaging-based
+  spatial transcriptomics (coarse lineages per cluster, cancer-associated fibroblast
+  subtypes, cancer stem-like cells, two-level immune subtypes, neighbourhood statistics)
+  into a configurable, reproducible pipeline: opt-in marker sets with a referenced default
+  library, per-stage provenance and staleness tracking, a hierarchical colour scheme that
+  carries across figures and datasets, and interoperability with spatioloji_s.
+type: software
+authors:
+  - given-names: "Ji"
+    family-names: "Wang"
+    email: "gynecoloji@gmail.com"
+    orcid: "https://orcid.org/0000-0003-3443-5857"
+repository-code: "https://github.com/gynecoloji/annotation_st"
+url: "https://github.com/gynecoloji/annotation_st"
+license: MIT
+keywords:
+  - spatial transcriptomics
+  - Xenium
+  - cell type annotation
+  - marker genes
+  - ovarian cancer
+  - bioinformatics
+# `version` + `date-released` are bumped automatically by release-please on each
+# release (via the annotations below) — do not edit them by hand.
+version: "0.1.0" # x-release-please-version
+date-released: "2026-10-07" # x-release-please-date
+# TODO(one-time): after enabling the Zenodo integration and publishing the first
+# GitHub Release, uncomment the block below and paste the *concept* DOI (the one
+# that always resolves to the latest version).
+# identifiers:
+#   - type: doi
+#     value: "10.5281/zenodo.XXXXXXXX"
+#     description: "Concept DOI (resolves to the latest version)"

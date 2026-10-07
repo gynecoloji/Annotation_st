@@ -1,0 +1,20 @@
+{
+ "library": "default",
+ "built": "2026-10-04",
+ "n_sets": 69,
+ "n_set_gene_pairs": 550,
+ "n_references": 1371,
+ "n_pmids": 414,
+ "n_candidates_dropped": 91,
+ "cellmarker": {
+  "source": "CellMarker 2.0 Cell_marker_Human.xlsx (PMID 36300619)",
+  "url": "http://117.50.127.228/CellMarker/CellMarker_download_files/file/Cell_marker_Human.xlsx",
+  "sha256": "bf52b8cd60df60f17a7c6b8a59d0bbb74ec78612f11cd11990f15e4eedb7d842",
+  "downloaded": "2026-10-04"
+ },
+ "evidence_counts": {
+  "curated": 1213,
+  "literature_text": 112,
+  "primary_text": 46
+ }
+}

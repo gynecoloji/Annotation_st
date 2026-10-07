@@ -1,0 +1,4 @@
+csc_status	n_ref	n_new	n_both	recall	precision	jaccard
+CSC_like	30061	30061	30061	1.0	1.0	1.0
+NA	569513	569513	569513	1.0	1.0	1.0
+Tumor_nonCSC	484234	484234	484234	1.0	1.0	1.0

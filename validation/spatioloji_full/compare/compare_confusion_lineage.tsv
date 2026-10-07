@@ -1,0 +1,10 @@
+reference	Endothelial	Epithelial_tumor	Fibroblast	Macrophage_Mono	Mesothelial	Ovarian_stroma	Plasma	T_NK	Unassigned
+Endothelial	37772	0	0	0	0	0	0	0	0
+Epithelial_tumor	0	514295	0	0	0	0	0	0	0
+Fibroblast	0	0	148982	0	0	0	0	0	0
+Macrophage_Mono	0	0	0	146937	0	0	0	0	0
+Mesothelial	0	0	0	0	140	0	0	0	0
+Ovarian_stroma	0	0	0	0	0	58481	0	0	0
+Plasma	0	0	0	0	0	0	27047	0	0
+T_NK	0	0	0	0	0	0	0	74718	0
+Unassigned	0	0	0	0	0	0	0	0	75436

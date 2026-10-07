@@ -1,0 +1,850 @@
+# Validated OV config (configs/xenium_ov_5k.yaml) with outputs redirected to
+# annotation_st_runs/ov for the 2026-10-06 re-annotation. Markers unchanged, so
+# this run doubles as a regression test against validation/ov_full.
+project:
+  name: xenium_ov_5k
+  xenium_dir: /easley/scratch/projects/amitra/amitra2016502/Xenium_5k_Human_OV_FFPE_outs
+  outdir: /easley/scratch/projects/amitra/amitra2016502/annotation_st_runs/ov
+  checkpoint_dir: /easley/scratch/projects/amitra/amitra2016502/annotation_st_runs/ov/checkpoints
+  prefix: xenium_ov
+  seed: 0
+  n_jobs: 32
+  figures: true
+qc:
+  subsample: 0
+  min_transcripts: 30
+  min_genes: 10
+  max_control_frac: 0.02
+  area_pct:
+  - 1.0
+  - 99.0
+  require_nucleus: true
+  min_cells_per_gene: 10
+lineage:
+  n_pcs: 50
+  n_neighbors: 15
+  resolution: 1.0
+  min_z: 0.5
+  cycling_z: 1.0
+  umap_cells: 300000
+  skip_umap: false
+  cycling_lineage: Epithelial_tumor
+  cycling_label: Epithelial_tumor_cycling
+  unassigned: Unassigned
+caf:
+  include_lineages:
+  - Fibroblast
+  n_pcs: 30
+  n_neighbors: 15
+  resolution: 0.5
+  min_z: 0.0
+  margin: 0.25
+  min_cells: 50
+  unassigned: FB_unassigned
+  marker_files:
+    iCAF: /easley/scratch/projects/amitra/amitra2016502/Grant/st_datasets/03-data/Data_01/Reference_Data/iCAF.txt
+    myCAF: /easley/scratch/projects/amitra/amitra2016502/Grant/st_datasets/03-data/Data_01/Reference_Data/myCAF.txt
+    apCAF: /easley/scratch/projects/amitra/amitra2016502/Grant/st_datasets/03-data/Data_01/Reference_Data/apCAF.txt
+csc:
+  tumor_lineages:
+  - Epithelial_tumor
+  z_thresh: 1.5
+  min_core: 2
+  n_pcs: 30
+  n_neighbors: 15
+  resolution: 0.4
+  umap_cells: 250000
+  min_cells: 50
+  positive_label: CSC_like
+  negative_label: Tumor_nonCSC
+  marker_file: null
+  core_marker_file: null
+immune:
+  compartments: null
+  n_pcs: 30
+  n_neighbors: 15
+  resolution: 1.5
+  min_z: 0.5
+  low_identity: -0.5
+  resolution2: 1.0
+  min_z2: 0.25
+  spill_flag: 1.0
+  umap_cells: 200000
+  min_cells: 100
+  min_cells_level2: 50
+spatial:
+  n_perms: 100
+  radius: 0.0
+  edge_cut_pct: 99.0
+  fine_key: cell_type_fine
+  composition_groups:
+  - CSC_like
+  - Tumor_nonCSC
+plot:
+  legend_groups:
+    Tumour epithelium:
+    - Tumor_nonCSC
+    - CSC_like
+    - Epithelial_tumor
+    - Epithelial_tumor_cycling
+    Fibroblast / CAF:
+    - iCAF
+    - myCAF
+    - apCAF
+    - FB_unassigned
+    - Fibroblast
+    Other stroma:
+    - Ovarian_stroma
+    - Endothelial
+    - Lymphatic_EC
+    - Pericyte_SMC
+    - Mesothelial
+    - Adipocyte
+    - Schwann
+    T cell:
+    - CD8_cytotoxic
+    - CD8_exhausted
+    - CD8_naive_memory
+    - CD8_T_unspecified
+    - CD8_T
+    - CD4_Th_effector
+    - Treg
+    - Tfh
+    - CD4_naive_memory
+    - CD4_T_unspecified
+    - CD4_T
+    - gdT_MAIT
+    - Proliferating_T
+    - T_NK
+    NK cell:
+    - NK
+    B lineage:
+    - Naive_B
+    - Memory_B
+    - GC_B
+    - B_cell
+    - Proliferating_B
+    - Plasmablast
+    - Plasma
+    'Myeloid: macrophage / monocyte':
+    - M1_macrophage
+    - M2_macrophage
+    - TREM2_TAM
+    - Hypoxic_TAM
+    - Macrophage_unpolarized
+    - Macrophage
+    - Monocyte_classical
+    - Monocyte_nonclassical
+    - Monocyte_unspecified
+    - Monocyte
+    - Proliferating_myeloid
+    - Osteoclast_like_giant
+    - Macrophage_Mono
+    'Myeloid: dendritic cell':
+    - mregDC
+    - cDC1
+    - cDC2
+    - cDC_unspecified
+    - cDC
+    - pDC
+    - Dendritic
+    'Myeloid: granulocyte':
+    - Neutrophil
+    - Mast
+    Unresolved / QC:
+    - Unassigned
+    - Myeloid_spillover_Tumor
+    - Myeloid_spillover_Fibroblast
+    - Bcell_spillover_Fibroblast
+    - TNK_spillover_Tumor
+    - TNK_spillover_Fibroblast
+    - Bcell_spillover_Tumor
+    - Immune_mixed
+    - Myeloid_spillover_Endothelial
+    - TNK_spillover_Endothelial
+    - Bcell_spillover_Endothelial
+    - T_NK_unresolved
+    - B_lineage_unresolved
+    - Myeloid_unresolved
+  qc_group: Unresolved / QC
+  generic_labels:
+  - Epithelial_tumor
+  - FB_unassigned
+  - Fibroblast
+  - CD8_T_unspecified
+  - CD8_T
+  - CD4_T_unspecified
+  - CD4_T
+  - T_NK
+  - B_cell
+  - Macrophage_unpolarized
+  - Macrophage
+  - Monocyte_unspecified
+  - Monocyte
+  - Macrophage_Mono
+  - cDC_unspecified
+  - cDC
+  - Dendritic
+  palette_file: null
+  colors: {}
+markers:
+  lineage:
+    Epithelial_tumor:
+    - EPCAM
+    - PAX8
+    - WT1
+    - MUC16
+    - SOX17
+    - CLDN7
+    - CDH1
+    - MUC1
+    - FOLR1
+    - ERBB2
+    - MSLN
+    Fibroblast:
+    - PDGFRA
+    - FAP
+    - THY1
+    - COL11A1
+    - COL5A1
+    - COL5A2
+    - FBLN2
+    - FBLN5
+    - POSTN
+    - CTHRC1
+    - SFRP4
+    - PI16
+    - MFAP5
+    - DPT
+    - LRRC15
+    - MMP11
+    - PRRX1
+    - LOX
+    - ASPN
+    - TWIST2
+    - CDH11
+    Pericyte_SMC:
+    - RGS5
+    - MCAM
+    - NOTCH3
+    - CSPG4
+    - KCNJ8
+    - ABCC9
+    - PDGFRB
+    Endothelial:
+    - PECAM1
+    - CDH5
+    - CLDN5
+    - KDR
+    - PLVAP
+    - ENG
+    - TEK
+    - ERG
+    - SOX18
+    Lymphatic_EC:
+    - PROX1
+    - FLT4
+    - PDPN
+    - PECAM1
+    T_NK:
+    - CD3E
+    - CD3G
+    - CD2
+    - CD247
+    - CD4
+    - CD8A
+    - CD8B
+    - GZMB
+    - GZMK
+    - GZMA
+    - PRF1
+    - KLRD1
+    - KLRB1
+    - FOXP3
+    - IL2RA
+    - CTLA4
+    - PDCD1
+    - TIGIT
+    - CCR7
+    - SELL
+    B_cell:
+    - MS4A1
+    - CD79A
+    - CD79B
+    - CD19
+    - BANK1
+    - PAX5
+    - CD22
+    Plasma:
+    - MZB1
+    - XBP1
+    - PRDM1
+    - TNFRSF17
+    - DERL3
+    - FCRL5
+    - CD38
+    Macrophage_Mono:
+    - CD68
+    - CD163
+    - CD14
+    - FCGR3A
+    - MRC1
+    - MSR1
+    - TREM2
+    - CSF1R
+    - ITGAM
+    - MARCO
+    - FOLR2
+    - SIGLEC1
+    Dendritic:
+    - CD1C
+    - CLEC10A
+    - FCER1A
+    - CLEC9A
+    - XCR1
+    - LAMP3
+    - LILRA4
+    - CLEC4C
+    - IL3RA
+    Neutrophil:
+    - CSF3R
+    - FCGR3B
+    - CD177
+    Mast:
+    - MS4A2
+    - HDC
+    - HPGDS
+    - GATA2
+    - KIT
+    Mesothelial:
+    - UPK3B
+    - CALB2
+    - PRG4
+    - PTGIS
+    - MSLN
+    Ovarian_stroma:
+    - FOXL2
+    - NR5A1
+    - STAR
+    - CYP17A1
+    - INHA
+    - AMH
+    - ARX
+    - TCF21
+    - DLK1
+    - GATA4
+    Adipocyte:
+    - PLIN1
+    - ADIPOQ
+    - LEP
+    - PPARG
+    Schwann:
+    - MPZ
+    - SOX10
+  proliferation:
+  - MKI67
+  - TOP2A
+  - CDK1
+  - BIRC5
+  - CCNB1
+  csc:
+  - CD44
+  - PROM1
+  - KIT
+  - LGR5
+  - SOX2
+  - POU5F1
+  - NANOG
+  - ABCG2
+  - NES
+  - LIN28A
+  - LIN28B
+  - BMI1
+  - CXCR4
+  csc_core:
+  - CD44
+  - PROM1
+  - KIT
+  - LGR5
+  - SOX2
+  - POU5F1
+  - NANOG
+  - ABCG2
+  spillover:
+    spillover_Tumor:
+    - EPCAM
+    - PAX8
+    - WT1
+    - MUC16
+    - SOX17
+    - CLDN7
+    - CDH1
+    - MUC1
+    - FOLR1
+    - MSLN
+    - BCAM
+    spillover_Fibroblast:
+    - PDGFRA
+    - FAP
+    - THY1
+    - COL11A1
+    - COL5A1
+    - COL5A2
+    - POSTN
+    - CTHRC1
+    - SFRP4
+    - MMP11
+    - AEBP1
+    - LTBP2
+    - THBS2
+    - CDH11
+    spillover_Endothelial:
+    - PECAM1
+    - CDH5
+    - CLDN5
+    - KDR
+    - PLVAP
+    - ENG
+    - TEK
+    - ERG
+    - SOX18
+    - CD34
+  compartments:
+    TNK:
+      lineages:
+      - T_NK
+      level1:
+        CD8_T:
+        - CD8A
+        - CD8B
+        CD4_T:
+        - CD4
+        - CD40LG
+        - FOXP3
+        - IL2RA
+        - CXCR5
+        - ICOS
+        NK:
+        - KLRD1
+        - KLRF1
+        - NCR1
+        - NCAM1
+        - FCGR3A
+        - KLRC1
+        - KLRK1
+        - XCL2
+        - XCL1
+        gdT_MAIT:
+        - TRDC
+        - TRGC1
+        - TRGC2
+        - KLRB1
+        - IL18R1
+        - SLC4A10
+        B_cell:
+        - MS4A1
+        - CD79A
+        - CD79B
+        - CD19
+        - BANK1
+        - PAX5
+        - CD22
+        Plasma:
+        - MZB1
+        - XBP1
+        - PRDM1
+        - TNFRSF17
+        - DERL3
+        - CD38
+        mregDC:
+        - LAMP3
+        - CCL19
+        - FSCN1
+        - CD83
+        - WDFY4
+        - CD274
+        - CCR7
+        Proliferating_T:
+        - MKI67
+        - TOP2A
+        - AURKB
+        - RRM2
+        - FOXM1
+        cross_Myeloid:
+        - CD14
+        - CD68
+        - CSF1R
+        - MSR1
+        - CD163
+        - SIGLEC1
+        - ITGAM
+        - MRC1
+        - SLCO2B1
+      level2:
+        CD8_T:
+          CD8_cytotoxic:
+          - GZMB
+          - GZMA
+          - GZMH
+          - GZMK
+          - PRF1
+          - KLRG1
+          - CX3CR1
+          - FGFBP2
+          - IFNG
+          - NKG7
+          - GNLY
+          CD8_exhausted:
+          - PDCD1
+          - LAG3
+          - HAVCR2
+          - TIGIT
+          - CTLA4
+          - TOX
+          - CXCL13
+          - ENTPD1
+          - TNFRSF9
+          - LAYN
+          CD8_naive_memory:
+          - CCR7
+          - SELL
+          - TCF7
+          - LEF1
+          - IL7R
+        CD4_T:
+          Treg:
+          - FOXP3
+          - IL2RA
+          - CTLA4
+          - IKZF2
+          - TNFRSF18
+          - CCR8
+          - TNFRSF4
+          Tfh:
+          - CXCL13
+          - CXCR5
+          - BCL6
+          - PDCD1
+          - ICOS
+          - IL21
+          CD4_Th_effector:
+          - TBX21
+          - IFNG
+          - GATA3
+          - RORC
+          - IL17A
+          - IL2
+          - CD40LG
+          CD4_naive_memory:
+          - CCR7
+          - SELL
+          - TCF7
+          - LEF1
+          - IL7R
+      core:
+      - CD8_T
+      - CD4_T
+      - NK
+      unresolved: T_NK_unresolved
+      cross:
+        cross_Myeloid: Macrophage_Mono
+      unspecified:
+        CD8_T: CD8_T_unspecified
+        CD4_T: CD4_T_unspecified
+      handoff:
+        B_cell: Bcell
+        Plasma: Bcell
+      coarse: {}
+    Bcell:
+      lineages:
+      - Plasma
+      level1:
+        B_cell:
+        - MS4A1
+        - CD79A
+        - CD79B
+        - CD19
+        - BANK1
+        - PAX5
+        - CD22
+        - CIITA
+        Plasma:
+        - MZB1
+        - XBP1
+        - PRDM1
+        - TNFRSF17
+        - DERL3
+        - CD38
+        - IRF4
+        - TENT5C
+        - POU2AF1
+        Proliferating_B:
+        - MKI67
+        - TOP2A
+        - AURKB
+        - RRM2
+        - FOXM1
+        pDC:
+        - LILRA4
+        - CLEC4C
+        - IL3RA
+        - TCF4
+        - IRF7
+        cDC1:
+        - CLEC9A
+        - XCR1
+        - BATF3
+        - IRF8
+        - CADM1
+        cross_T:
+        - CD3E
+        - CD3G
+        - CD2
+        - CD247
+        - CD8A
+        - TRDC
+        cross_Myeloid:
+        - CD14
+        - CD68
+        - CSF1R
+        - MSR1
+        - CD163
+        - SIGLEC1
+        - ITGAM
+        - MRC1
+        - SLCO2B1
+      level2:
+        B_cell:
+          Naive_B:
+          - TCL1A
+          - FCER2
+          - IL4R
+          - BACH2
+          - SELL
+          - CCR7
+          - IGHD
+          - IGHM
+          Memory_B:
+          - CD27
+          - TNFRSF13B
+          - CD80
+          - CD86
+          - ITGAX
+          - TBX21
+          - FCRL4
+          - FCRL5
+          - AIM2
+          GC_B:
+          - BCL6
+          - AICDA
+          - LMO2
+          - SUGCT
+          - SERPINA9
+          - CD38
+          - MKI67
+          - RGS13
+        Plasma:
+          Plasmablast:
+          - MKI67
+          - TOP2A
+          - AURKB
+          - RRM2
+      core:
+      - Plasma
+      unresolved: B_lineage_unresolved
+      cross:
+        cross_T: T_NK
+        cross_Myeloid: Macrophage_Mono
+      unspecified:
+        B_cell: B_cell
+        Plasma: Plasma
+      handoff: {}
+      coarse:
+        B_cell: B_cell
+        Proliferating_B: B_cell
+        Plasma: Plasma
+        pDC: Dendritic
+        cDC1: Dendritic
+        cross_T: T_NK
+        cross_Myeloid: Macrophage_Mono
+    Myeloid:
+      lineages:
+      - Macrophage_Mono
+      level1:
+        Macrophage:
+        - CD68
+        - CD163
+        - MRC1
+        - MSR1
+        - CSF1R
+        - MARCO
+        - FOLR2
+        - TREM2
+        - SIGLEC1
+        - STAB1
+        - SLCO2B1
+        - C1QA
+        - C1QB
+        Monocyte:
+        - FCN1
+        - CCR2
+        - SELL
+        - LILRB2
+        - CDKN1C
+        - CX3CR1
+        - S100A8
+        - S100A9
+        - VCAN
+        cDC:
+        - CD1C
+        - CLEC10A
+        - FCER1A
+        - CD1E
+        - CLEC9A
+        - XCR1
+        - BATF3
+        - LAMP3
+        - CCL19
+        - FSCN1
+        - CD83
+        pDC:
+        - LILRA4
+        - CLEC4C
+        - IL3RA
+        - TCF4
+        - IRF7
+        Neutrophil:
+        - CSF3R
+        - FCGR3B
+        - CD177
+        - CXCR2
+        - CXCR1
+        - S100A8
+        Mast:
+        - KIT
+        - MS4A2
+        - HDC
+        - HPGDS
+        - GATA2
+        - TPSAB1
+        Osteoclast_like_giant:
+        - ACP5
+        - CTSK
+        - NFATC1
+        - TNFRSF11A
+        - ATP6V0D2
+        - OCSTAMP
+        - DCSTAMP
+        Proliferating_myeloid:
+        - MKI67
+        - TOP2A
+        - AURKB
+        - RRM2
+        - FOXM1
+        cross_T:
+        - CD3E
+        - CD3G
+        - CD2
+        - CD247
+        - CD8A
+        - TRDC
+      level2:
+        Macrophage:
+          M1_macrophage:
+          - CD86
+          - CD80
+          - IL1B
+          - TNF
+          - CXCL9
+          - CXCL10
+          - CXCL11
+          - IDO1
+          - STAT1
+          - NOS2
+          - IL6
+          - SOCS3
+          - GBP1
+          - GBP5
+          - CCL5
+          M2_macrophage:
+          - CD163
+          - MRC1
+          - FOLR2
+          - CD209
+          - IL10
+          - TGFB1
+          - CCL18
+          - CCL22
+          - F13A1
+          - STAB1
+          - SELENOP
+          - LYVE1
+          - SLC40A1
+          - GAS6
+          TREM2_TAM:
+          - TREM2
+          - LIPA
+          - GPNMB
+          - APOE
+          - APOC1
+          - SPP1
+          - LGALS3
+          - FABP5
+          - LGMN
+          - CTSL
+          Hypoxic_TAM:
+          - SLC2A1
+          - HK2
+          - ADM
+          - LDHA
+          - PGK1
+          - VEGFA
+          - PLIN2
+          - BNIP3
+          - SLC2A3
+        Monocyte:
+          Monocyte_classical:
+          - CD14
+          - FCN1
+          - CCR2
+          - SELL
+          - S100A8
+          - S100A9
+          - VCAN
+          - LYZ
+          Monocyte_nonclassical:
+          - FCGR3A
+          - CX3CR1
+          - LILRB2
+          - CDKN1C
+        cDC:
+          cDC1:
+          - CLEC9A
+          - XCR1
+          - BATF3
+          - IRF8
+          - CADM1
+          cDC2:
+          - CD1C
+          - CLEC10A
+          - FCER1A
+          - CD1E
+          mregDC:
+          - LAMP3
+          - CCR7
+          - CCL19
+          - FSCN1
+          - CD274
+          - CD83
+      core:
+      - Macrophage
+      unresolved: Myeloid_unresolved
+      cross:
+        cross_T: T_NK
+      unspecified:
+        Macrophage: Macrophage_unpolarized
+        Monocyte: Monocyte_unspecified
+        cDC: cDC_unspecified
+      handoff: {}
+      coarse: {}
+  caf: {}

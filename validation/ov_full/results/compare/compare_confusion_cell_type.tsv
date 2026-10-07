@@ -1,0 +1,13 @@
+reference	B_cell	Dendritic	Endothelial	Epithelial_tumor	Epithelial_tumor_cycling	Fibroblast	Macrophage_Mono	Mesothelial	Ovarian_stroma	Plasma	T_NK	Unassigned
+B_cell	1698	0	0	0	0	0	0	0	0	1097	0	0
+Dendritic	0	39	0	0	0	0	524	0	0	1	1364	0
+Endothelial	0	0	37772	0	0	0	0	0	0	0	0	0
+Epithelial_tumor	0	0	0	429906	0	0	0	0	0	0	0	0
+Epithelial_tumor_cycling	0	0	0	0	84389	0	0	0	0	0	0	0
+Fibroblast	0	0	0	0	0	148982	0	0	0	0	0	0
+Macrophage_Mono	1	0	0	0	0	0	148781	0	0	298	137	0
+Mesothelial	0	0	0	0	0	0	0	140	0	0	0	0
+Ovarian_stroma	0	0	0	0	0	0	0	0	58481	0	0	0
+Plasma	46	0	0	0	0	0	25	0	0	22802	277	0
+T_NK	5	0	0	0	0	0	139	0	0	57	71411	0
+Unassigned	0	0	0	0	0	0	0	0	0	0	0	75436

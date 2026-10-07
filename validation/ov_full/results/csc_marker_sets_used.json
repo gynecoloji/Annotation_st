@@ -1,0 +1,64 @@
+{
+  "source": {
+    "csc": "config markers.csc",
+    "core": "config markers.csc_core restricted to the set"
+  },
+  "requested": {
+    "OCSC": [
+      "CD44",
+      "PROM1",
+      "KIT",
+      "LGR5",
+      "SOX2",
+      "POU5F1",
+      "NANOG",
+      "ABCG2",
+      "NES",
+      "LIN28A",
+      "LIN28B",
+      "BMI1",
+      "CXCR4"
+    ],
+    "OCSC_core": [
+      "CD44",
+      "PROM1",
+      "KIT",
+      "LGR5",
+      "SOX2",
+      "POU5F1",
+      "NANOG",
+      "ABCG2"
+    ]
+  },
+  "used_on_panel": {
+    "OCSC": [
+      "CD44",
+      "PROM1",
+      "KIT",
+      "LGR5",
+      "SOX2",
+      "POU5F1",
+      "NANOG",
+      "ABCG2",
+      "NES",
+      "LIN28A",
+      "LIN28B",
+      "BMI1",
+      "CXCR4"
+    ],
+    "OCSC_core": [
+      "CD44",
+      "PROM1",
+      "KIT",
+      "LGR5",
+      "SOX2",
+      "POU5F1",
+      "NANOG",
+      "ABCG2"
+    ]
+  },
+  "dropped_not_on_panel": {
+    "OCSC": [],
+    "OCSC_core": []
+  }
+}

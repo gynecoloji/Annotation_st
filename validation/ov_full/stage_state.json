@@ -1,0 +1,1148 @@
+{
+  "qc": {
+    "run_id": "20261003T145012-cb1dee2b",
+    "finished": "2026-10-03T14:50:12",
+    "status": "completed",
+    "note": "",
+    "inputs": {
+      "qc": {
+        "area_pct": [
+          1.0,
+          99.0
+        ],
+        "max_control_frac": 0.02,
+        "min_cells_per_gene": 10,
+        "min_genes": 10,
+        "min_transcripts": 30,
+        "require_nucleus": true,
+        "subsample": 0
+      },
+      "seed": 0,
+      "xenium_dir": "/easley/scratch/projects/amitra/amitra2016502/Xenium_5k_Human_OV_FFPE_outs"
+    },
+    "upstream": {},
+    "outputs": [
+      "/easley/scratch/projects/amitra/amitra2016502/annotation_st/validation/ov_full/checkpoints/xenium_ov_01_qc.h5ad"
+    ],
+    "n_jobs": 32,
+    "versions": {
+      "annotation_st": "0.1.0",
+      "scanpy": "1.11.5",
+      "squidpy": "1.8.1",
+      "anndata": "0.12.7",
+      "numpy": "2.2.6",
+      "pandas": "2.3.3"
+    }
+  },
+  "lineage": {
+    "run_id": "20261003T152651-3bcd6bdb",
+    "finished": "2026-10-03T15:26:51",
+    "status": "completed",
+    "note": "",
+    "inputs": {
+      "lineage": {
+        "cycling_label": "Epithelial_tumor_cycling",
+        "cycling_lineage": "Epithelial_tumor",
+        "cycling_z": 1.0,
+        "min_z": 0.5,
+        "n_neighbors": 15,
+        "n_pcs": 50,
+        "resolution": 1.0,
+        "unassigned": "Unassigned"
+      },
+      "lineage_sets": {
+        "Adipocyte": [
+          "PLIN1",
+          "ADIPOQ",
+          "LEP",
+          "PPARG"
+        ],
+        "B_cell": [
+          "MS4A1",
+          "CD79A",
+          "CD79B",
+          "CD19",
+          "BANK1",
+          "PAX5",
+          "CD22"
+        ],
+        "Dendritic": [
+          "CD1C",
+          "CLEC10A",
+          "FCER1A",
+          "CLEC9A",
+          "XCR1",
+          "LAMP3",
+          "LILRA4",
+          "CLEC4C",
+          "IL3RA"
+        ],
+        "Endothelial": [
+          "PECAM1",
+          "CDH5",
+          "CLDN5",
+          "KDR",
+          "PLVAP",
+          "ENG",
+          "TEK",
+          "ERG",
+          "SOX18"
+        ],
+        "Epithelial_tumor": [
+          "EPCAM",
+          "PAX8",
+          "WT1",
+          "MUC16",
+          "SOX17",
+          "CLDN7",
+          "CDH1",
+          "MUC1",
+          "FOLR1",
+          "ERBB2",
+          "MSLN"
+        ],
+        "Fibroblast": [
+          "PDGFRA",
+          "FAP",
+          "THY1",
+          "COL11A1",
+          "COL5A1",
+          "COL5A2",
+          "FBLN2",
+          "FBLN5",
+          "POSTN",
+          "CTHRC1",
+          "SFRP4",
+          "PI16",
+          "MFAP5",
+          "DPT",
+          "LRRC15",
+          "MMP11",
+          "PRRX1",
+          "LOX",
+          "ASPN",
+          "TWIST2",
+          "CDH11"
+        ],
+        "Lymphatic_EC": [
+          "PROX1",
+          "FLT4",
+          "PDPN",
+          "PECAM1"
+        ],
+        "Macrophage_Mono": [
+          "CD68",
+          "CD163",
+          "CD14",
+          "FCGR3A",
+          "MRC1",
+          "MSR1",
+          "TREM2",
+          "CSF1R",
+          "ITGAM",
+          "MARCO",
+          "FOLR2",
+          "SIGLEC1"
+        ],
+        "Mast": [
+          "MS4A2",
+          "HDC",
+          "HPGDS",
+          "GATA2",
+          "KIT"
+        ],
+        "Mesothelial": [
+          "UPK3B",
+          "CALB2",
+          "PRG4",
+          "PTGIS",
+          "MSLN"
+        ],
+        "Neutrophil": [
+          "CSF3R",
+          "FCGR3B",
+          "CD177"
+        ],
+        "Ovarian_stroma": [
+          "FOXL2",
+          "NR5A1",
+          "STAR",
+          "CYP17A1",
+          "INHA",
+          "AMH",
+          "ARX",
+          "TCF21",
+          "DLK1",
+          "GATA4"
+        ],
+        "Pericyte_SMC": [
+          "RGS5",
+          "MCAM",
+          "NOTCH3",
+          "CSPG4",
+          "KCNJ8",
+          "ABCC9",
+          "PDGFRB"
+        ],
+        "Plasma": [
+          "MZB1",
+          "XBP1",
+          "PRDM1",
+          "TNFRSF17",
+          "DERL3",
+          "FCRL5",
+          "CD38"
+        ],
+        "Schwann": [
+          "MPZ",
+          "SOX10"
+        ],
+        "T_NK": [
+          "CD3E",
+          "CD3G",
+          "CD2",
+          "CD247",
+          "CD4",
+          "CD8A",
+          "CD8B",
+          "GZMB",
+          "GZMK",
+          "GZMA",
+          "PRF1",
+          "KLRD1",
+          "KLRB1",
+          "FOXP3",
+          "IL2RA",
+          "CTLA4",
+          "PDCD1",
+          "TIGIT",
+          "CCR7",
+          "SELL"
+        ]
+      },
+      "proliferation": [
+        "MKI67",
+        "TOP2A",
+        "CDK1",
+        "BIRC5",
+        "CCNB1"
+      ],
+      "seed": 0
+    },
+    "upstream": {
+      "qc": "20261003T145012-cb1dee2b"
+    },
+    "outputs": [
+      "/easley/scratch/projects/amitra/amitra2016502/annotation_st/validation/ov_full/checkpoints/xenium_ov_02_lineage.h5ad"
+    ],
+    "n_jobs": 32,
+    "versions": {
+      "annotation_st": "0.1.0",
+      "scanpy": "1.11.5",
+      "squidpy": "1.8.1",
+      "anndata": "0.12.7",
+      "numpy": "2.2.6",
+      "pandas": "2.3.3"
+    }
+  },
+  "caf": {
+    "run_id": "20261003T153216-109fd206",
+    "finished": "2026-10-03T15:32:16",
+    "status": "completed",
+    "note": "",
+    "inputs": {
+      "caf": {
+        "include_lineages": [
+          "Fibroblast"
+        ],
+        "margin": 0.25,
+        "min_cells": 50,
+        "min_z": 0.0,
+        "n_neighbors": 15,
+        "n_pcs": 30,
+        "resolution": 0.5,
+        "unassigned": "FB_unassigned"
+      },
+      "caf_sets": {
+        "apCAF": [
+          "CD74",
+          "HLA-DRA",
+          "HLA-DRB1",
+          "HLA-DRB5",
+          "HLA-DPA1",
+          "HLA-DPB1",
+          "HLA-DQA1",
+          "HLA-DQB1",
+          "HLA-DMA",
+          "HLA-DMB",
+          "SLPI",
+          "SAA1",
+          "SAA2",
+          "MSLN",
+          "CDH11",
+          "PDPN",
+          "CLU",
+          "KRT19",
+          "XBP1",
+          "STAT1",
+          "IRF5",
+          "NFE2L2",
+          "NFE2L3",
+          "BCAM",
+          "F11R"
+        ],
+        "iCAF": [
+          "C3",
+          "DUSP1",
+          "FBLN1",
+          "LMNA",
+          "CLU",
+          "CCDC80",
+          "MYC",
+          "EFEMP1",
+          "HAS1",
+          "NR4A1",
+          "CFD",
+          "ANXA1",
+          "CXCL12",
+          "FGF7",
+          "KLF4",
+          "EMP1",
+          "GPRC5A",
+          "SRPX",
+          "MT2A",
+          "MEDAG",
+          "IGF1",
+          "MGST1",
+          "MCL1",
+          "CEBPD",
+          "S100A10",
+          "UAP1",
+          "TNXB",
+          "CEBPB",
+          "PNRC1",
+          "SOCS3",
+          "PTGDS",
+          "FOSB",
+          "NFKBIA",
+          "CXCL2",
+          "THBS1",
+          "CCL2",
+          "OGN",
+          "GSN",
+          "DPT",
+          "PLA2G2A",
+          "NAMPT",
+          "ITM2A",
+          "RGCC",
+          "JUND",
+          "NNMT",
+          "ZFP36",
+          "PIM1",
+          "CPE",
+          "GFPT2",
+          "SOD2",
+          "KDM6B",
+          "FSTL1",
+          "FBLN2",
+          "NR4A3",
+          "MFAP5",
+          "ABL2",
+          "SGK1",
+          "CILP",
+          "UGDH",
+          "FBLN5",
+          "ADAMTS1",
+          "ADH1B",
+          "WISP2",
+          "GPX3",
+          "S100A4",
+          "IL6",
+          "HAS2",
+          "PLAC9",
+          "IGFBP6",
+          "FBN1",
+          "BDKRB1",
+          "TPPP3",
+          "RASD1",
+          "MT1A",
+          "CXCL14",
+          "PI16",
+          "APOE",
+          "IL8",
+          "ARC",
+          "PTX3",
+          "TNFAIP6",
+          "MT1E",
+          "MT1X",
+          "CXCL1"
+        ],
+        "myCAF": [
+          "MYL9",
+          "CALD1",
+          "MMP11",
+          "HOPX",
+          "BGN",
+          "IGFBP7",
+          "TPM2",
+          "CTHRC1",
+          "ACTA2",
+          "TAGLN",
+          "INHBA",
+          "COL10A1",
+          "TPM1",
+          "POSTN",
+          "GRP",
+          "CST1"
+        ]
+      },
+      "seed": 0
+    },
+    "upstream": {
+      "lineage": "20261003T152651-3bcd6bdb"
+    },
+    "outputs": [
+      "/easley/scratch/projects/amitra/amitra2016502/annotation_st/validation/ov_full/checkpoints/xenium_ov_03_caf.h5ad"
+    ],
+    "n_jobs": 16,
+    "versions": {
+      "annotation_st": "0.1.0",
+      "scanpy": "1.11.5",
+      "squidpy": "1.8.1",
+      "anndata": "0.12.7",
+      "numpy": "2.2.6",
+      "pandas": "2.3.3"
+    }
+  },
+  "csc": {
+    "run_id": "20261003T154857-98bf072c",
+    "finished": "2026-10-03T15:48:57",
+    "status": "completed",
+    "note": "",
+    "inputs": {
+      "core_genes": [
+        "CD44",
+        "PROM1",
+        "KIT",
+        "LGR5",
+        "SOX2",
+        "POU5F1",
+        "NANOG",
+        "ABCG2"
+      ],
+      "csc": {
+        "min_cells": 50,
+        "min_core": 2,
+        "n_neighbors": 15,
+        "n_pcs": 30,
+        "negative_label": "Tumor_nonCSC",
+        "positive_label": "CSC_like",
+        "resolution": 0.4,
+        "tumor_lineages": [
+          "Epithelial_tumor"
+        ],
+        "z_thresh": 1.5
+      },
+      "csc_genes": [
+        "CD44",
+        "PROM1",
+        "KIT",
+        "LGR5",
+        "SOX2",
+        "POU5F1",
+        "NANOG",
+        "ABCG2",
+        "NES",
+        "LIN28A",
+        "LIN28B",
+        "BMI1",
+        "CXCR4"
+      ],
+      "seed": 0
+    },
+    "upstream": {
+      "lineage": "20261003T152651-3bcd6bdb"
+    },
+    "outputs": [
+      "/easley/scratch/projects/amitra/amitra2016502/annotation_st/validation/ov_full/checkpoints/xenium_ov_04_csc.h5ad"
+    ],
+    "n_jobs": 16,
+    "versions": {
+      "annotation_st": "0.1.0",
+      "scanpy": "1.11.5",
+      "squidpy": "1.8.1",
+      "anndata": "0.12.7",
+      "numpy": "2.2.6",
+      "pandas": "2.3.3"
+    }
+  },
+  "immune": {
+    "run_id": "20261003T155720-ae140283",
+    "finished": "2026-10-03T15:57:20",
+    "status": "completed",
+    "note": "",
+    "inputs": {
+      "compartments": {
+        "Bcell": {
+          "coarse": {
+            "B_cell": "B_cell",
+            "Plasma": "Plasma",
+            "Proliferating_B": "B_cell",
+            "cDC1": "Dendritic",
+            "cross_Myeloid": "Macrophage_Mono",
+            "cross_T": "T_NK",
+            "pDC": "Dendritic"
+          },
+          "core": [
+            "Plasma"
+          ],
+          "cross": {
+            "cross_Myeloid": "Macrophage_Mono",
+            "cross_T": "T_NK"
+          },
+          "handoff": {},
+          "level1": {
+            "B_cell": [
+              "MS4A1",
+              "CD79A",
+              "CD79B",
+              "CD19",
+              "BANK1",
+              "PAX5",
+              "CD22",
+              "CIITA"
+            ],
+            "Plasma": [
+              "MZB1",
+              "XBP1",
+              "PRDM1",
+              "TNFRSF17",
+              "DERL3",
+              "CD38",
+              "IRF4",
+              "TENT5C",
+              "POU2AF1"
+            ],
+            "Proliferating_B": [
+              "MKI67",
+              "TOP2A",
+              "AURKB",
+              "RRM2",
+              "FOXM1"
+            ],
+            "cDC1": [
+              "CLEC9A",
+              "XCR1",
+              "BATF3",
+              "IRF8",
+              "CADM1"
+            ],
+            "cross_Myeloid": [
+              "CD14",
+              "CD68",
+              "CSF1R",
+              "MSR1",
+              "CD163",
+              "SIGLEC1",
+              "ITGAM",
+              "MRC1",
+              "SLCO2B1"
+            ],
+            "cross_T": [
+              "CD3E",
+              "CD3G",
+              "CD2",
+              "CD247",
+              "CD8A",
+              "TRDC"
+            ],
+            "pDC": [
+              "LILRA4",
+              "CLEC4C",
+              "IL3RA",
+              "TCF4",
+              "IRF7"
+            ]
+          },
+          "level2": {
+            "B_cell": {
+              "GC_B": [
+                "BCL6",
+                "AICDA",
+                "LMO2",
+                "SUGCT",
+                "SERPINA9",
+                "CD38",
+                "MKI67",
+                "RGS13"
+              ],
+              "Memory_B": [
+                "CD27",
+                "TNFRSF13B",
+                "CD80",
+                "CD86",
+                "ITGAX",
+                "TBX21",
+                "FCRL4",
+                "FCRL5",
+                "AIM2"
+              ],
+              "Naive_B": [
+                "TCL1A",
+                "FCER2",
+                "IL4R",
+                "BACH2",
+                "SELL",
+                "CCR7",
+                "IGHD",
+                "IGHM"
+              ]
+            },
+            "Plasma": {
+              "Plasmablast": [
+                "MKI67",
+                "TOP2A",
+                "AURKB",
+                "RRM2"
+              ]
+            }
+          },
+          "lineages": [
+            "Plasma"
+          ],
+          "unresolved": "B_lineage_unresolved",
+          "unspecified": {
+            "B_cell": "B_cell",
+            "Plasma": "Plasma"
+          }
+        },
+        "Myeloid": {
+          "coarse": {},
+          "core": [
+            "Macrophage"
+          ],
+          "cross": {
+            "cross_T": "T_NK"
+          },
+          "handoff": {},
+          "level1": {
+            "Macrophage": [
+              "CD68",
+              "CD163",
+              "MRC1",
+              "MSR1",
+              "CSF1R",
+              "MARCO",
+              "FOLR2",
+              "TREM2",
+              "SIGLEC1",
+              "STAB1",
+              "SLCO2B1",
+              "C1QA",
+              "C1QB"
+            ],
+            "Mast": [
+              "KIT",
+              "MS4A2",
+              "HDC",
+              "HPGDS",
+              "GATA2",
+              "TPSAB1"
+            ],
+            "Monocyte": [
+              "FCN1",
+              "CCR2",
+              "SELL",
+              "LILRB2",
+              "CDKN1C",
+              "CX3CR1",
+              "S100A8",
+              "S100A9",
+              "VCAN"
+            ],
+            "Neutrophil": [
+              "CSF3R",
+              "FCGR3B",
+              "CD177",
+              "CXCR2",
+              "CXCR1",
+              "S100A8"
+            ],
+            "Osteoclast_like_giant": [
+              "ACP5",
+              "CTSK",
+              "NFATC1",
+              "TNFRSF11A",
+              "ATP6V0D2",
+              "OCSTAMP",
+              "DCSTAMP"
+            ],
+            "Proliferating_myeloid": [
+              "MKI67",
+              "TOP2A",
+              "AURKB",
+              "RRM2",
+              "FOXM1"
+            ],
+            "cDC": [
+              "CD1C",
+              "CLEC10A",
+              "FCER1A",
+              "CD1E",
+              "CLEC9A",
+              "XCR1",
+              "BATF3",
+              "LAMP3",
+              "CCL19",
+              "FSCN1",
+              "CD83"
+            ],
+            "cross_T": [
+              "CD3E",
+              "CD3G",
+              "CD2",
+              "CD247",
+              "CD8A",
+              "TRDC"
+            ],
+            "pDC": [
+              "LILRA4",
+              "CLEC4C",
+              "IL3RA",
+              "TCF4",
+              "IRF7"
+            ]
+          },
+          "level2": {
+            "Macrophage": {
+              "Hypoxic_TAM": [
+                "SLC2A1",
+                "HK2",
+                "ADM",
+                "LDHA",
+                "PGK1",
+                "VEGFA",
+                "PLIN2",
+                "BNIP3",
+                "SLC2A3"
+              ],
+              "M1_macrophage": [
+                "CD86",
+                "CD80",
+                "IL1B",
+                "TNF",
+                "CXCL9",
+                "CXCL10",
+                "CXCL11",
+                "IDO1",
+                "STAT1",
+                "NOS2",
+                "IL6",
+                "SOCS3",
+                "GBP1",
+                "GBP5",
+                "CCL5"
+              ],
+              "M2_macrophage": [
+                "CD163",
+                "MRC1",
+                "FOLR2",
+                "CD209",
+                "IL10",
+                "TGFB1",
+                "CCL18",
+                "CCL22",
+                "F13A1",
+                "STAB1",
+                "SELENOP",
+                "LYVE1",
+                "SLC40A1",
+                "GAS6"
+              ],
+              "TREM2_TAM": [
+                "TREM2",
+                "LIPA",
+                "GPNMB",
+                "APOE",
+                "APOC1",
+                "SPP1",
+                "LGALS3",
+                "FABP5",
+                "LGMN",
+                "CTSL"
+              ]
+            },
+            "Monocyte": {
+              "Monocyte_classical": [
+                "CD14",
+                "FCN1",
+                "CCR2",
+                "SELL",
+                "S100A8",
+                "S100A9",
+                "VCAN",
+                "LYZ"
+              ],
+              "Monocyte_nonclassical": [
+                "FCGR3A",
+                "CX3CR1",
+                "LILRB2",
+                "CDKN1C"
+              ]
+            },
+            "cDC": {
+              "cDC1": [
+                "CLEC9A",
+                "XCR1",
+                "BATF3",
+                "IRF8",
+                "CADM1"
+              ],
+              "cDC2": [
+                "CD1C",
+                "CLEC10A",
+                "FCER1A",
+                "CD1E"
+              ],
+              "mregDC": [
+                "LAMP3",
+                "CCR7",
+                "CCL19",
+                "FSCN1",
+                "CD274",
+                "CD83"
+              ]
+            }
+          },
+          "lineages": [
+            "Macrophage_Mono"
+          ],
+          "unresolved": "Myeloid_unresolved",
+          "unspecified": {
+            "Macrophage": "Macrophage_unpolarized",
+            "Monocyte": "Monocyte_unspecified",
+            "cDC": "cDC_unspecified"
+          }
+        },
+        "TNK": {
+          "coarse": {},
+          "core": [
+            "CD8_T",
+            "CD4_T",
+            "NK"
+          ],
+          "cross": {
+            "cross_Myeloid": "Macrophage_Mono"
+          },
+          "handoff": {
+            "B_cell": "Bcell",
+            "Plasma": "Bcell"
+          },
+          "level1": {
+            "B_cell": [
+              "MS4A1",
+              "CD79A",
+              "CD79B",
+              "CD19",
+              "BANK1",
+              "PAX5",
+              "CD22"
+            ],
+            "CD4_T": [
+              "CD4",
+              "CD40LG",
+              "FOXP3",
+              "IL2RA",
+              "CXCR5",
+              "ICOS"
+            ],
+            "CD8_T": [
+              "CD8A",
+              "CD8B"
+            ],
+            "NK": [
+              "KLRD1",
+              "KLRF1",
+              "NCR1",
+              "NCAM1",
+              "FCGR3A",
+              "KLRC1",
+              "KLRK1",
+              "XCL2",
+              "XCL1"
+            ],
+            "Plasma": [
+              "MZB1",
+              "XBP1",
+              "PRDM1",
+              "TNFRSF17",
+              "DERL3",
+              "CD38"
+            ],
+            "Proliferating_T": [
+              "MKI67",
+              "TOP2A",
+              "AURKB",
+              "RRM2",
+              "FOXM1"
+            ],
+            "cross_Myeloid": [
+              "CD14",
+              "CD68",
+              "CSF1R",
+              "MSR1",
+              "CD163",
+              "SIGLEC1",
+              "ITGAM",
+              "MRC1",
+              "SLCO2B1"
+            ],
+            "gdT_MAIT": [
+              "TRDC",
+              "TRGC1",
+              "TRGC2",
+              "KLRB1",
+              "IL18R1",
+              "SLC4A10"
+            ],
+            "mregDC": [
+              "LAMP3",
+              "CCL19",
+              "FSCN1",
+              "CD83",
+              "WDFY4",
+              "CD274",
+              "CCR7"
+            ]
+          },
+          "level2": {
+            "CD4_T": {
+              "CD4_Th_effector": [
+                "TBX21",
+                "IFNG",
+                "GATA3",
+                "RORC",
+                "IL17A",
+                "IL2",
+                "CD40LG"
+              ],
+              "CD4_naive_memory": [
+                "CCR7",
+                "SELL",
+                "TCF7",
+                "LEF1",
+                "IL7R"
+              ],
+              "Tfh": [
+                "CXCL13",
+                "CXCR5",
+                "BCL6",
+                "PDCD1",
+                "ICOS",
+                "IL21"
+              ],
+              "Treg": [
+                "FOXP3",
+                "IL2RA",
+                "CTLA4",
+                "IKZF2",
+                "TNFRSF18",
+                "CCR8",
+                "TNFRSF4"
+              ]
+            },
+            "CD8_T": {
+              "CD8_cytotoxic": [
+                "GZMB",
+                "GZMA",
+                "GZMH",
+                "GZMK",
+                "PRF1",
+                "KLRG1",
+                "CX3CR1",
+                "FGFBP2",
+                "IFNG",
+                "NKG7",
+                "GNLY"
+              ],
+              "CD8_exhausted": [
+                "PDCD1",
+                "LAG3",
+                "HAVCR2",
+                "TIGIT",
+                "CTLA4",
+                "TOX",
+                "CXCL13",
+                "ENTPD1",
+                "TNFRSF9",
+                "LAYN"
+              ],
+              "CD8_naive_memory": [
+                "CCR7",
+                "SELL",
+                "TCF7",
+                "LEF1",
+                "IL7R"
+              ]
+            }
+          },
+          "lineages": [
+            "T_NK"
+          ],
+          "unresolved": "T_NK_unresolved",
+          "unspecified": {
+            "CD4_T": "CD4_T_unspecified",
+            "CD8_T": "CD8_T_unspecified"
+          }
+        }
+      },
+      "immune": {
+        "low_identity": -0.5,
+        "min_cells": 100,
+        "min_cells_level2": 50,
+        "min_z": 0.5,
+        "min_z2": 0.25,
+        "n_neighbors": 15,
+        "n_pcs": 30,
+        "resolution": 1.5,
+        "resolution2": 1.0,
+        "spill_flag": 1.0
+      },
+      "seed": 0,
+      "spillover": {
+        "spillover_Endothelial": [
+          "PECAM1",
+          "CDH5",
+          "CLDN5",
+          "KDR",
+          "PLVAP",
+          "ENG",
+          "TEK",
+          "ERG",
+          "SOX18",
+          "CD34"
+        ],
+        "spillover_Fibroblast": [
+          "PDGFRA",
+          "FAP",
+          "THY1",
+          "COL11A1",
+          "COL5A1",
+          "COL5A2",
+          "POSTN",
+          "CTHRC1",
+          "SFRP4",
+          "MMP11",
+          "AEBP1",
+          "LTBP2",
+          "THBS2",
+          "CDH11"
+        ],
+        "spillover_Tumor": [
+          "EPCAM",
+          "PAX8",
+          "WT1",
+          "MUC16",
+          "SOX17",
+          "CLDN7",
+          "CDH1",
+          "MUC1",
+          "FOLR1",
+          "MSLN",
+          "BCAM"
+        ]
+      }
+    },
+    "upstream": {
+      "lineage": "20261003T152651-3bcd6bdb"
+    },
+    "outputs": [
+      "/easley/scratch/projects/amitra/amitra2016502/annotation_st/validation/ov_full/checkpoints/xenium_ov_05_immune_TNK.h5ad",
+      "/easley/scratch/projects/amitra/amitra2016502/annotation_st/validation/ov_full/checkpoints/xenium_ov_05_immune_Bcell.h5ad",
+      "/easley/scratch/projects/amitra/amitra2016502/annotation_st/validation/ov_full/checkpoints/xenium_ov_05_immune_Myeloid.h5ad"
+    ],
+    "n_jobs": 16,
+    "versions": {
+      "annotation_st": "0.1.0",
+      "scanpy": "1.11.5",
+      "squidpy": "1.8.1",
+      "anndata": "0.12.7",
+      "numpy": "2.2.6",
+      "pandas": "2.3.3"
+    }
+  },
+  "merge": {
+    "run_id": "20261003T160606-7be17047",
+    "finished": "2026-10-03T16:06:06",
+    "status": "completed",
+    "note": "",
+    "inputs": {
+      "coarse": {
+        "Bcell": {
+          "B_cell": "B_cell",
+          "Plasma": "Plasma",
+          "Proliferating_B": "B_cell",
+          "cDC1": "Dendritic",
+          "cross_Myeloid": "Macrophage_Mono",
+          "cross_T": "T_NK",
+          "pDC": "Dendritic"
+        },
+        "Myeloid": {},
+        "TNK": {}
+      }
+    },
+    "upstream": {
+      "lineage": "20261003T152651-3bcd6bdb",
+      "caf": "20261003T153216-109fd206",
+      "csc": "20261003T154857-98bf072c",
+      "immune": "20261003T155720-ae140283"
+    },
+    "outputs": [
+      "/easley/scratch/projects/amitra/amitra2016502/annotation_st/validation/ov_full/checkpoints/xenium_ov_06_final.h5ad"
+    ],
+    "n_jobs": 16,
+    "versions": {
+      "annotation_st": "0.1.0",
+      "scanpy": "1.11.5",
+      "squidpy": "1.8.1",
+      "anndata": "0.12.7",
+      "numpy": "2.2.6",
+      "pandas": "2.3.3"
+    }
+  },
+  "spatial": {
+    "run_id": "20261003T161725-d00dbf36",
+    "finished": "2026-10-03T16:17:25",
+    "status": "completed",
+    "note": "",
+    "inputs": {
+      "seed": 0,
+      "spatial": {
+        "composition_groups": [
+          "CSC_like",
+          "Tumor_nonCSC"
+        ],
+        "edge_cut_pct": 99.0,
+        "fine_key": "cell_type_fine",
+        "n_perms": 100,
+        "radius": 0.0
+      }
+    },
+    "upstream": {
+      "merge": "20261003T160606-7be17047"
+    },
+    "outputs": [
+      "/easley/scratch/projects/amitra/amitra2016502/annotation_st/validation/ov_full/checkpoints/xenium_ov_06_final.h5ad",
+      "/easley/scratch/projects/amitra/amitra2016502/annotation_st/validation/ov_full/results/nhood_enrichment_zscore.tsv"
+    ],
+    "n_jobs": 16,
+    "versions": {
+      "annotation_st": "0.1.0",
+      "scanpy": "1.11.5",
+      "squidpy": "1.8.1",
+      "anndata": "0.12.7",
+      "numpy": "2.2.6",
+      "pandas": "2.3.3"
+    }
+  }
+}

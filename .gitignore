@@ -1,0 +1,47 @@
+# ── Python / packaging ──
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.coverage
+.venv/
+env/
+venv/
+
+# ── Run outputs of the pipeline (never commit data) ──
+annot_run/
+*.h5ad
+**/checkpoints/
+**/figures/
+**/logs/
+**/qc/
+**/slurm_*.out
+**/slurm_logs/
+*_by_cell.tsv.gz
+**/*.png
+**/*.pdf
+**/*.pkl
+_mtx_extracted/
+
+# ── Downloads and caches of the reference-building tools ──
+tools/cache/
+*.xlsx
+
+# ── Internal design docs & workflow scratch ──
+.superpowers/
+.claude/
+
+# ── OS & editor ──
+.DS_Store
+._*
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+.ipynb_checkpoints/

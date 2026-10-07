@@ -1,0 +1,83 @@
+project: {name: sample, xenium_dir: null, outdir: annot_run, checkpoint_dir: null, prefix: sample, seed: 0, n_jobs: 8,
+  figures: true}
+qc:
+  subsample: 0
+  min_transcripts: 30
+  min_genes: 10
+  max_control_frac: 0.02
+  area_pct: [1.0, 99.0]
+  require_nucleus: true
+  min_cells_per_gene: 10
+lineage: {n_pcs: 50, n_neighbors: 15, resolution: 1.0, min_z: 0.5, cycling_z: 1.0, umap_cells: 300000, skip_umap: false,
+  cycling_lineage: Epithelial_tumor, cycling_label: Epithelial_tumor_cycling, unassigned: Unassigned}
+caf:
+  include_lineages: [Fibroblast]
+  n_pcs: 30
+  n_neighbors: 15
+  resolution: 0.5
+  min_z: 0.0
+  margin: 0.25
+  min_cells: 50
+  unassigned: FB_unassigned
+  marker_files: {}
+csc:
+  tumor_lineages: [Epithelial_tumor]
+  z_thresh: 1.5
+  min_core: 2
+  n_pcs: 30
+  n_neighbors: 15
+  resolution: 0.4
+  umap_cells: 250000
+  min_cells: 50
+  positive_label: CSC_like
+  negative_label: Tumor_nonCSC
+  marker_file: null
+  core_marker_file: null
+immune: {compartments: null, n_pcs: 30, n_neighbors: 15, resolution: 1.5, min_z: 0.5, low_identity: -0.5, resolution2: 1.0,
+  min_z2: 0.25, spill_flag: 1.0, umap_cells: 200000, min_cells: 100, min_cells_level2: 50}
+spatial:
+  n_perms: 100
+  radius: 0.0
+  edge_cut_pct: 99.0
+  fine_key: cell_type_fine
+  composition_groups: [CSC_like, Tumor_nonCSC]
+plot:
+  legend_groups:
+    Tumour epithelium: [Tumor_nonCSC, CSC_like, Epithelial_tumor, Epithelial_tumor_cycling]
+    Fibroblast / CAF: [iCAF, myCAF, apCAF, FB_unassigned, Fibroblast]
+    Other stroma: [Ovarian_stroma, Endothelial, Lymphatic_EC, Pericyte_SMC, Mesothelial, Adipocyte, Schwann]
+    T cell: [CD8_cytotoxic, CD8_exhausted, CD8_naive_memory, CD8_T_unspecified, CD8_T, CD4_Th_effector, Treg, Tfh,
+      CD4_naive_memory, CD4_T_unspecified, CD4_T, gdT_MAIT, Proliferating_T, T_NK]
+    NK cell: [NK]
+    B lineage: [Naive_B, Memory_B, GC_B, B_cell, Proliferating_B, Plasmablast, Plasma]
+    'Myeloid: macrophage / monocyte': [M1_macrophage, M2_macrophage, TREM2_TAM, Hypoxic_TAM, Macrophage_unpolarized,
+      Macrophage, Monocyte_classical, Monocyte_nonclassical, Monocyte_unspecified, Monocyte, Proliferating_myeloid,
+      Osteoclast_like_giant, Macrophage_Mono]
+    'Myeloid: dendritic cell': [mregDC, cDC1, cDC2, cDC_unspecified, cDC, pDC, Dendritic]
+    'Myeloid: granulocyte': [Neutrophil, Mast]
+    Unresolved / QC: [Unassigned, Myeloid_spillover_Tumor, Myeloid_spillover_Fibroblast, Bcell_spillover_Fibroblast,
+      TNK_spillover_Tumor, TNK_spillover_Fibroblast, Bcell_spillover_Tumor, Immune_mixed, Myeloid_spillover_Endothelial,
+      TNK_spillover_Endothelial, Bcell_spillover_Endothelial, T_NK_unresolved, B_lineage_unresolved, Myeloid_unresolved]
+  qc_group: Unresolved / QC
+  generic_labels: [Epithelial_tumor, FB_unassigned, Fibroblast, CD8_T_unspecified, CD8_T, CD4_T_unspecified, CD4_T,
+    T_NK, B_cell, Macrophage_unpolarized, Macrophage, Monocyte_unspecified, Monocyte, Macrophage_Mono, cDC_unspecified,
+    cDC, Dendritic]
+  palette_file: null
+  colors: {}
+# Marker sets are opt-in: only what is listed here is scored.
+#   default            the package's default set(s); every gene has a literature reference
+#                      (`annot-st markers` lists them, `annot-st markers --set <name>` shows the references)
+#   [GENE1, GENE2]     your own gene list
+#   path/to/file.txt   your own list, one gene per line (relative to this file)
+# A section can be opted in as a whole (as below) or set by set, e.g.
+#   lineage: {Epithelial_tumor: default, Fibroblast: default, Hepatocyte: [ALB, APOA1, TTR]}
+#   compartments: {TNK: default}      # fine types of one immune compartment only
+# Remove a line to switch that part off: without `csc` the CSC stage is skipped, and so on.
+markers:
+  lineage: default
+  proliferation: default
+  csc: default
+  csc_core: default
+  spillover: default
+  caf: default
+  compartments: default

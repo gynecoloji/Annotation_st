@@ -1,0 +1,1244 @@
+{
+  "qc_filter": {
+    "timestamp": "2026-10-03T14:50:12",
+    "xenium_dir": "/easley/scratch/projects/amitra/amitra2016502/Xenium_5k_Human_OV_FFPE_outs",
+    "subsample": 0,
+    "seed": 0,
+    "n_cells_input": 1157659,
+    "n_cells_kept": 1083808,
+    "n_genes_kept": 5001,
+    "min_transcripts": 30,
+    "min_genes": 10,
+    "max_control_frac": 0.02,
+    "area_pct": [
+      1.0,
+      99.0
+    ],
+    "area_bounds_um2": [
+      16.075625583529472,
+      270.1246973052621
+    ],
+    "require_nucleus": true,
+    "min_cells_per_gene": 10,
+    "versions": {
+      "annotation_st": "0.1.0",
+      "scanpy": "1.11.5",
+      "squidpy": "1.8.1",
+      "anndata": "0.12.7",
+      "numpy": "2.2.6",
+      "pandas": "2.3.3"
+    }
+  },
+  "cluster_annotate": {
+    "timestamp": "2026-10-03T15:26:51",
+    "normalization": "normalize_total(median)+log1p",
+    "n_pcs": 50,
+    "n_neighbors": 15,
+    "leiden_resolution": 1.0,
+    "leiden_flavor": "igraph",
+    "n_clusters": 21,
+    "umap": true,
+    "umap_cells": 300000,
+    "min_z": 0.5,
+    "cycling_z": 1.0,
+    "lineage_marker_sets": {
+      "Epithelial_tumor": [
+        "EPCAM",
+        "PAX8",
+        "WT1",
+        "MUC16",
+        "SOX17",
+        "CLDN7",
+        "CDH1",
+        "MUC1",
+        "FOLR1",
+        "ERBB2",
+        "MSLN"
+      ],
+      "Fibroblast": [
+        "PDGFRA",
+        "FAP",
+        "THY1",
+        "COL11A1",
+        "COL5A1",
+        "COL5A2",
+        "FBLN2",
+        "FBLN5",
+        "POSTN",
+        "CTHRC1",
+        "SFRP4",
+        "PI16",
+        "MFAP5",
+        "DPT",
+        "LRRC15",
+        "MMP11",
+        "PRRX1",
+        "LOX",
+        "ASPN",
+        "TWIST2",
+        "CDH11"
+      ],
+      "Pericyte_SMC": [
+        "RGS5",
+        "MCAM",
+        "NOTCH3",
+        "CSPG4",
+        "KCNJ8",
+        "ABCC9",
+        "PDGFRB"
+      ],
+      "Endothelial": [
+        "PECAM1",
+        "CDH5",
+        "CLDN5",
+        "KDR",
+        "PLVAP",
+        "ENG",
+        "TEK",
+        "ERG",
+        "SOX18"
+      ],
+      "Lymphatic_EC": [
+        "PROX1",
+        "FLT4",
+        "PDPN",
+        "PECAM1"
+      ],
+      "T_NK": [
+        "CD3E",
+        "CD3G",
+        "CD2",
+        "CD247",
+        "CD4",
+        "CD8A",
+        "CD8B",
+        "GZMB",
+        "GZMK",
+        "GZMA",
+        "PRF1",
+        "KLRD1",
+        "KLRB1",
+        "FOXP3",
+        "IL2RA",
+        "CTLA4",
+        "PDCD1",
+        "TIGIT",
+        "CCR7",
+        "SELL"
+      ],
+      "B_cell": [
+        "MS4A1",
+        "CD79A",
+        "CD79B",
+        "CD19",
+        "BANK1",
+        "PAX5",
+        "CD22"
+      ],
+      "Plasma": [
+        "MZB1",
+        "XBP1",
+        "PRDM1",
+        "TNFRSF17",
+        "DERL3",
+        "FCRL5",
+        "CD38"
+      ],
+      "Macrophage_Mono": [
+        "CD68",
+        "CD163",
+        "CD14",
+        "FCGR3A",
+        "MRC1",
+        "MSR1",
+        "TREM2",
+        "CSF1R",
+        "ITGAM",
+        "MARCO",
+        "FOLR2",
+        "SIGLEC1"
+      ],
+      "Dendritic": [
+        "CD1C",
+        "CLEC10A",
+        "FCER1A",
+        "CLEC9A",
+        "XCR1",
+        "LAMP3",
+        "LILRA4",
+        "CLEC4C",
+        "IL3RA"
+      ],
+      "Neutrophil": [
+        "CSF3R",
+        "FCGR3B",
+        "CD177"
+      ],
+      "Mast": [
+        "MS4A2",
+        "HDC",
+        "HPGDS",
+        "GATA2",
+        "KIT"
+      ],
+      "Mesothelial": [
+        "UPK3B",
+        "CALB2",
+        "PRG4",
+        "PTGIS",
+        "MSLN"
+      ],
+      "Ovarian_stroma": [
+        "FOXL2",
+        "NR5A1",
+        "STAR",
+        "CYP17A1",
+        "INHA",
+        "AMH",
+        "ARX",
+        "TCF21",
+        "DLK1",
+        "GATA4"
+      ],
+      "Adipocyte": [
+        "PLIN1",
+        "ADIPOQ",
+        "LEP",
+        "PPARG"
+      ],
+      "Schwann": [
+        "MPZ",
+        "SOX10"
+      ]
+    },
+    "proliferation_markers": [
+      "MKI67",
+      "TOP2A",
+      "CDK1",
+      "BIRC5",
+      "CCNB1"
+    ],
+    "cell_type_counts": {
+      "Epithelial_tumor": 429906,
+      "Fibroblast": 148982,
+      "Macrophage_Mono": 146937,
+      "Epithelial_tumor_cycling": 84389,
+      "Unassigned": 75436,
+      "T_NK": 74718,
+      "Ovarian_stroma": 58481,
+      "Endothelial": 37772,
+      "Plasma": 27047,
+      "Mesothelial": 140
+    },
+    "seed": 0
+  },
+  "fibroblast_caf": {
+    "timestamp": "2026-10-03T15:32:16",
+    "fb_lineages": [
+      "Fibroblast"
+    ],
+    "n_fibroblasts": 148982,
+    "n_pcs": 30,
+    "n_neighbors": 15,
+    "leiden_resolution": 0.5,
+    "n_subclusters": 8,
+    "min_z": 0.0,
+    "margin": 0.25,
+    "caf_markers_on_panel": {
+      "iCAF": [
+        "CCDC80",
+        "MYC",
+        "NR4A1",
+        "CXCL12",
+        "FGF7",
+        "KLF4",
+        "EMP1",
+        "SRPX",
+        "IGF1",
+        "TNXB",
+        "SOCS3",
+        "CXCL2",
+        "THBS1",
+        "DPT",
+        "ITM2A",
+        "PIM1",
+        "KDM6B",
+        "FSTL1",
+        "FBLN2",
+        "NR4A3",
+        "MFAP5",
+        "ABL2",
+        "SGK1",
+        "UGDH",
+        "FBLN5",
+        "ADAMTS1",
+        "IL6",
+        "HAS2",
+        "BDKRB1",
+        "TPPP3",
+        "RASD1",
+        "MT1A",
+        "PI16",
+        "ARC",
+        "PTX3"
+      ],
+      "myCAF": [
+        "MMP11",
+        "HOPX",
+        "CTHRC1",
+        "INHBA",
+        "COL10A1",
+        "POSTN",
+        "GRP",
+        "CST1"
+      ],
+      "apCAF": [
+        "MSLN",
+        "CDH11",
+        "PDPN",
+        "XBP1",
+        "STAT1",
+        "IRF5",
+        "NFE2L2",
+        "NFE2L3",
+        "BCAM",
+        "F11R"
+      ]
+    },
+    "caf_markers_dropped": {
+      "iCAF": [
+        "C3",
+        "DUSP1",
+        "FBLN1",
+        "LMNA",
+        "CLU",
+        "EFEMP1",
+        "HAS1",
+        "CFD",
+        "ANXA1",
+        "GPRC5A",
+        "MT2A",
+        "MEDAG",
+        "MGST1",
+        "MCL1",
+        "CEBPD",
+        "S100A10",
+        "UAP1",
+        "CEBPB",
+        "PNRC1",
+        "PTGDS",
+        "FOSB",
+        "NFKBIA",
+        "CCL2",
+        "OGN",
+        "GSN",
+        "PLA2G2A",
+        "NAMPT",
+        "RGCC",
+        "JUND",
+        "NNMT",
+        "ZFP36",
+        "CPE",
+        "GFPT2",
+        "SOD2",
+        "CILP",
+        "ADH1B",
+        "WISP2",
+        "GPX3",
+        "S100A4",
+        "PLAC9",
+        "IGFBP6",
+        "FBN1",
+        "CXCL14",
+        "APOE",
+        "IL8",
+        "TNFAIP6",
+        "MT1E",
+        "MT1X",
+        "CXCL1"
+      ],
+      "myCAF": [
+        "MYL9",
+        "CALD1",
+        "BGN",
+        "IGFBP7",
+        "TPM2",
+        "ACTA2",
+        "TAGLN",
+        "TPM1"
+      ],
+      "apCAF": [
+        "CD74",
+        "HLA-DRA",
+        "HLA-DRB1",
+        "HLA-DRB5",
+        "HLA-DPA1",
+        "HLA-DPB1",
+        "HLA-DQA1",
+        "HLA-DQB1",
+        "HLA-DMA",
+        "HLA-DMB",
+        "SLPI",
+        "SAA1",
+        "SAA2",
+        "CLU",
+        "KRT19"
+      ]
+    },
+    "caf_subtype_counts_per_cell": {
+      "myCAF": 42068,
+      "apCAF": 37595,
+      "FB_unassigned": 37160,
+      "iCAF": 32159
+    },
+    "seed": 0
+  },
+  "cancer_csc": {
+    "timestamp": "2026-10-03T15:48:57",
+    "tumor_lineages": [
+      "Epithelial_tumor"
+    ],
+    "n_tumor_cells": 514295,
+    "ocsc_markers_on_panel": [
+      "CD44",
+      "PROM1",
+      "KIT",
+      "LGR5",
+      "SOX2",
+      "POU5F1",
+      "NANOG",
+      "ABCG2",
+      "NES",
+      "LIN28A",
+      "LIN28B",
+      "BMI1",
+      "CXCR4"
+    ],
+    "ocsc_markers_dropped": [],
+    "core_markers": [
+      "CD44",
+      "PROM1",
+      "KIT",
+      "LGR5",
+      "SOX2",
+      "POU5F1",
+      "NANOG",
+      "ABCG2"
+    ],
+    "marker_source": {
+      "csc": "config markers.csc",
+      "core": "config markers.csc_core restricted to the set"
+    },
+    "z_thresh": 1.5,
+    "min_core": 2,
+    "n_csc_like": 30061,
+    "frac_csc_like": 0.05845088908116937,
+    "umap_cells": 250000,
+    "seed": 0
+  },
+  "immune_subcluster": {
+    "timestamp": "2026-10-03T15:57:20",
+    "compartments": {
+      "TNK": [
+        "T_NK"
+      ],
+      "Bcell": [
+        "Plasma"
+      ],
+      "Myeloid": [
+        "Macrophage_Mono"
+      ]
+    },
+    "n_pcs": 30,
+    "n_neighbors": 15,
+    "leiden_resolution": 1.5,
+    "min_z_spillover": 0.5,
+    "low_identity": -0.5,
+    "resolution_level2": 1.0,
+    "min_z_level2": 0.25,
+    "spill_flag": 1.0,
+    "umap_cells": 200000,
+    "markers_on_panel": {
+      "TNK": {
+        "level1": {
+          "used_on_panel": {
+            "CD8_T": [
+              "CD8A",
+              "CD8B"
+            ],
+            "CD4_T": [
+              "CD4",
+              "CD40LG",
+              "FOXP3",
+              "IL2RA",
+              "CXCR5",
+              "ICOS"
+            ],
+            "NK": [
+              "KLRD1",
+              "KLRF1",
+              "NCR1",
+              "NCAM1",
+              "FCGR3A",
+              "KLRC1",
+              "KLRK1",
+              "XCL2"
+            ],
+            "gdT_MAIT": [
+              "TRDC",
+              "KLRB1",
+              "IL18R1"
+            ],
+            "B_cell": [
+              "MS4A1",
+              "CD79A",
+              "CD79B",
+              "CD19",
+              "BANK1",
+              "PAX5",
+              "CD22"
+            ],
+            "Plasma": [
+              "MZB1",
+              "XBP1",
+              "PRDM1",
+              "TNFRSF17",
+              "DERL3",
+              "CD38"
+            ],
+            "mregDC": [
+              "LAMP3",
+              "CCL19",
+              "FSCN1",
+              "CD83",
+              "WDFY4",
+              "CD274",
+              "CCR7"
+            ],
+            "Proliferating_T": [
+              "MKI67",
+              "TOP2A",
+              "AURKB",
+              "RRM2",
+              "FOXM1"
+            ],
+            "cross_Myeloid": [
+              "CD14",
+              "CD68",
+              "CSF1R",
+              "MSR1",
+              "CD163",
+              "SIGLEC1",
+              "ITGAM",
+              "MRC1",
+              "SLCO2B1"
+            ],
+            "spillover_Tumor": [
+              "EPCAM",
+              "PAX8",
+              "WT1",
+              "MUC16",
+              "SOX17",
+              "CLDN7",
+              "CDH1",
+              "MUC1",
+              "FOLR1",
+              "MSLN",
+              "BCAM"
+            ],
+            "spillover_Fibroblast": [
+              "PDGFRA",
+              "FAP",
+              "THY1",
+              "COL11A1",
+              "COL5A1",
+              "COL5A2",
+              "POSTN",
+              "CTHRC1",
+              "SFRP4",
+              "MMP11",
+              "AEBP1",
+              "LTBP2",
+              "THBS2",
+              "CDH11"
+            ],
+            "spillover_Endothelial": [
+              "PECAM1",
+              "CDH5",
+              "CLDN5",
+              "KDR",
+              "PLVAP",
+              "ENG",
+              "TEK",
+              "ERG",
+              "SOX18",
+              "CD34"
+            ]
+          },
+          "dropped_not_on_panel": {
+            "CD8_T": [],
+            "CD4_T": [],
+            "NK": [
+              "XCL1"
+            ],
+            "gdT_MAIT": [
+              "TRGC1",
+              "TRGC2",
+              "SLC4A10"
+            ],
+            "B_cell": [],
+            "Plasma": [],
+            "mregDC": [],
+            "Proliferating_T": [],
+            "cross_Myeloid": [],
+            "spillover_Tumor": [],
+            "spillover_Fibroblast": [],
+            "spillover_Endothelial": []
+          }
+        },
+        "level2": {
+          "CD8_T": {
+            "used_on_panel": {
+              "CD8_cytotoxic": [
+                "GZMB",
+                "GZMA",
+                "GZMH",
+                "GZMK",
+                "PRF1",
+                "KLRG1",
+                "CX3CR1",
+                "FGFBP2",
+                "IFNG"
+              ],
+              "CD8_exhausted": [
+                "PDCD1",
+                "LAG3",
+                "HAVCR2",
+                "TIGIT",
+                "CTLA4",
+                "TOX",
+                "CXCL13",
+                "ENTPD1",
+                "TNFRSF9"
+              ],
+              "CD8_naive_memory": [
+                "CCR7",
+                "SELL",
+                "TCF7",
+                "LEF1"
+              ]
+            },
+            "dropped_not_on_panel": {
+              "CD8_cytotoxic": [
+                "NKG7",
+                "GNLY"
+              ],
+              "CD8_exhausted": [
+                "LAYN"
+              ],
+              "CD8_naive_memory": [
+                "IL7R"
+              ]
+            }
+          },
+          "CD4_T": {
+            "used_on_panel": {
+              "Treg": [
+                "FOXP3",
+                "IL2RA",
+                "CTLA4",
+                "IKZF2",
+                "TNFRSF18",
+                "CCR8"
+              ],
+              "Tfh": [
+                "CXCL13",
+                "CXCR5",
+                "BCL6",
+                "PDCD1",
+                "ICOS",
+                "IL21"
+              ],
+              "CD4_Th_effector": [
+                "TBX21",
+                "IFNG",
+                "GATA3",
+                "RORC",
+                "IL17A",
+                "IL2",
+                "CD40LG"
+              ],
+              "CD4_naive_memory": [
+                "CCR7",
+                "SELL",
+                "TCF7",
+                "LEF1"
+              ]
+            },
+            "dropped_not_on_panel": {
+              "Treg": [
+                "TNFRSF4"
+              ],
+              "Tfh": [],
+              "CD4_Th_effector": [],
+              "CD4_naive_memory": [
+                "IL7R"
+              ]
+            }
+          }
+        }
+      },
+      "Bcell": {
+        "level1": {
+          "used_on_panel": {
+            "B_cell": [
+              "MS4A1",
+              "CD79A",
+              "CD79B",
+              "CD19",
+              "BANK1",
+              "PAX5",
+              "CD22",
+              "CIITA"
+            ],
+            "Plasma": [
+              "MZB1",
+              "XBP1",
+              "PRDM1",
+              "TNFRSF17",
+              "DERL3",
+              "CD38",
+              "IRF4",
+              "TENT5C",
+              "POU2AF1"
+            ],
+            "Proliferating_B": [
+              "MKI67",
+              "TOP2A",
+              "AURKB",
+              "RRM2",
+              "FOXM1"
+            ],
+            "pDC": [
+              "LILRA4",
+              "CLEC4C",
+              "IL3RA",
+              "TCF4",
+              "IRF7"
+            ],
+            "cDC1": [
+              "CLEC9A",
+              "XCR1",
+              "BATF3",
+              "IRF8"
+            ],
+            "cross_T": [
+              "CD3E",
+              "CD3G",
+              "CD2",
+              "CD247",
+              "CD8A",
+              "TRDC"
+            ],
+            "cross_Myeloid": [
+              "CD14",
+              "CD68",
+              "CSF1R",
+              "MSR1",
+              "CD163",
+              "SIGLEC1",
+              "ITGAM",
+              "MRC1",
+              "SLCO2B1"
+            ],
+            "spillover_Tumor": [
+              "EPCAM",
+              "PAX8",
+              "WT1",
+              "MUC16",
+              "SOX17",
+              "CLDN7",
+              "CDH1",
+              "MUC1",
+              "FOLR1",
+              "MSLN",
+              "BCAM"
+            ],
+            "spillover_Fibroblast": [
+              "PDGFRA",
+              "FAP",
+              "THY1",
+              "COL11A1",
+              "COL5A1",
+              "COL5A2",
+              "POSTN",
+              "CTHRC1",
+              "SFRP4",
+              "MMP11",
+              "AEBP1",
+              "LTBP2",
+              "THBS2",
+              "CDH11"
+            ],
+            "spillover_Endothelial": [
+              "PECAM1",
+              "CDH5",
+              "CLDN5",
+              "KDR",
+              "PLVAP",
+              "ENG",
+              "TEK",
+              "ERG",
+              "SOX18",
+              "CD34"
+            ]
+          },
+          "dropped_not_on_panel": {
+            "B_cell": [],
+            "Plasma": [],
+            "Proliferating_B": [],
+            "pDC": [],
+            "cDC1": [
+              "CADM1"
+            ],
+            "cross_T": [],
+            "cross_Myeloid": [],
+            "spillover_Tumor": [],
+            "spillover_Fibroblast": [],
+            "spillover_Endothelial": []
+          }
+        },
+        "level2": {
+          "B_cell": {
+            "used_on_panel": {
+              "Naive_B": [
+                "TCL1A",
+                "FCER2",
+                "IL4R",
+                "BACH2",
+                "SELL",
+                "CCR7"
+              ],
+              "Memory_B": [
+                "CD27",
+                "TNFRSF13B",
+                "CD80",
+                "CD86",
+                "ITGAX",
+                "TBX21",
+                "FCRL4",
+                "FCRL5",
+                "AIM2"
+              ],
+              "GC_B": [
+                "BCL6",
+                "AICDA",
+                "LMO2",
+                "SUGCT",
+                "SERPINA9",
+                "CD38",
+                "MKI67"
+              ]
+            },
+            "dropped_not_on_panel": {
+              "Naive_B": [
+                "IGHD",
+                "IGHM"
+              ],
+              "Memory_B": [],
+              "GC_B": [
+                "RGS13"
+              ]
+            }
+          },
+          "Plasma": {
+            "used_on_panel": {
+              "Plasmablast": [
+                "MKI67",
+                "TOP2A",
+                "AURKB",
+                "RRM2"
+              ]
+            },
+            "dropped_not_on_panel": {
+              "Plasmablast": []
+            }
+          }
+        }
+      },
+      "Myeloid": {
+        "level1": {
+          "used_on_panel": {
+            "Macrophage": [
+              "CD68",
+              "CD163",
+              "MRC1",
+              "MSR1",
+              "CSF1R",
+              "MARCO",
+              "FOLR2",
+              "TREM2",
+              "SIGLEC1",
+              "STAB1",
+              "SLCO2B1"
+            ],
+            "Monocyte": [
+              "FCN1",
+              "CCR2",
+              "SELL",
+              "LILRB2",
+              "CDKN1C",
+              "CX3CR1"
+            ],
+            "cDC": [
+              "CD1C",
+              "CLEC10A",
+              "FCER1A",
+              "CD1E",
+              "CLEC9A",
+              "XCR1",
+              "BATF3",
+              "LAMP3",
+              "CCL19",
+              "FSCN1",
+              "CD83"
+            ],
+            "pDC": [
+              "LILRA4",
+              "CLEC4C",
+              "IL3RA",
+              "TCF4",
+              "IRF7"
+            ],
+            "Neutrophil": [
+              "CSF3R",
+              "FCGR3B",
+              "CD177",
+              "CXCR2",
+              "CXCR1"
+            ],
+            "Mast": [
+              "KIT",
+              "MS4A2",
+              "HDC",
+              "HPGDS",
+              "GATA2"
+            ],
+            "Osteoclast_like_giant": [
+              "ACP5",
+              "CTSK",
+              "NFATC1",
+              "TNFRSF11A"
+            ],
+            "Proliferating_myeloid": [
+              "MKI67",
+              "TOP2A",
+              "AURKB",
+              "RRM2",
+              "FOXM1"
+            ],
+            "cross_T": [
+              "CD3E",
+              "CD3G",
+              "CD2",
+              "CD247",
+              "CD8A",
+              "TRDC"
+            ],
+            "spillover_Tumor": [
+              "EPCAM",
+              "PAX8",
+              "WT1",
+              "MUC16",
+              "SOX17",
+              "CLDN7",
+              "CDH1",
+              "MUC1",
+              "FOLR1",
+              "MSLN",
+              "BCAM"
+            ],
+            "spillover_Fibroblast": [
+              "PDGFRA",
+              "FAP",
+              "THY1",
+              "COL11A1",
+              "COL5A1",
+              "COL5A2",
+              "POSTN",
+              "CTHRC1",
+              "SFRP4",
+              "MMP11",
+              "AEBP1",
+              "LTBP2",
+              "THBS2",
+              "CDH11"
+            ],
+            "spillover_Endothelial": [
+              "PECAM1",
+              "CDH5",
+              "CLDN5",
+              "KDR",
+              "PLVAP",
+              "ENG",
+              "TEK",
+              "ERG",
+              "SOX18",
+              "CD34"
+            ]
+          },
+          "dropped_not_on_panel": {
+            "Macrophage": [
+              "C1QA",
+              "C1QB"
+            ],
+            "Monocyte": [
+              "S100A8",
+              "S100A9",
+              "VCAN"
+            ],
+            "cDC": [],
+            "pDC": [],
+            "Neutrophil": [
+              "S100A8"
+            ],
+            "Mast": [
+              "TPSAB1"
+            ],
+            "Osteoclast_like_giant": [
+              "ATP6V0D2",
+              "OCSTAMP",
+              "DCSTAMP"
+            ],
+            "Proliferating_myeloid": [],
+            "cross_T": [],
+            "spillover_Tumor": [],
+            "spillover_Fibroblast": [],
+            "spillover_Endothelial": []
+          }
+        },
+        "level2": {
+          "Macrophage": {
+            "used_on_panel": {
+              "M1_macrophage": [
+                "CD86",
+                "CD80",
+                "IL1B",
+                "TNF",
+                "CXCL9",
+                "CXCL10",
+                "CXCL11",
+                "IDO1",
+                "STAT1",
+                "NOS2",
+                "IL6",
+                "SOCS3",
+                "GBP1",
+                "GBP5"
+              ],
+              "M2_macrophage": [
+                "CD163",
+                "MRC1",
+                "FOLR2",
+                "CD209",
+                "IL10",
+                "TGFB1",
+                "CCL18",
+                "CCL22",
+                "F13A1",
+                "STAB1",
+                "SLC40A1",
+                "GAS6"
+              ],
+              "TREM2_TAM": [
+                "TREM2",
+                "LIPA",
+                "LGMN",
+                "CTSL"
+              ],
+              "Hypoxic_TAM": [
+                "SLC2A1",
+                "HK2",
+                "ADM",
+                "LDHA",
+                "PGK1",
+                "VEGFA",
+                "PLIN2",
+                "BNIP3",
+                "SLC2A3"
+              ]
+            },
+            "dropped_not_on_panel": {
+              "M1_macrophage": [
+                "CCL5"
+              ],
+              "M2_macrophage": [
+                "SELENOP",
+                "LYVE1"
+              ],
+              "TREM2_TAM": [
+                "GPNMB",
+                "APOE",
+                "APOC1",
+                "SPP1",
+                "LGALS3",
+                "FABP5"
+              ],
+              "Hypoxic_TAM": []
+            }
+          },
+          "Monocyte": {
+            "used_on_panel": {
+              "Monocyte_classical": [
+                "CD14",
+                "FCN1",
+                "CCR2",
+                "SELL"
+              ],
+              "Monocyte_nonclassical": [
+                "FCGR3A",
+                "CX3CR1",
+                "LILRB2",
+                "CDKN1C"
+              ]
+            },
+            "dropped_not_on_panel": {
+              "Monocyte_classical": [
+                "S100A8",
+                "S100A9",
+                "VCAN",
+                "LYZ"
+              ],
+              "Monocyte_nonclassical": []
+            }
+          }
+        }
+      }
+    },
+    "subtype_counts": {
+      "TNK": {
+        "NK": 21456,
+        "CD4_T_unspecified": 15456,
+        "CD8_T_unspecified": 9412,
+        "CD8_naive_memory": 5773,
+        "Macrophage_Mono": 5673,
+        "Treg": 5173,
+        "CD8_cytotoxic": 3274,
+        "Proliferating_T": 2236,
+        "CD4_Th_effector": 1738,
+        "mregDC": 1363,
+        "CD8_exhausted": 1274
+      },
+      "Bcell": {
+        "Plasma": 16702,
+        "Bcell_spillover_Fibroblast": 4488,
+        "Plasmablast": 3065,
+        "Macrophage_Mono": 2532,
+        "Proliferating_B": 697,
+        "Memory_B": 387,
+        "T_NK": 361,
+        "Naive_B": 245,
+        "B_cell": 239,
+        "GC_B": 182,
+        "pDC": 23,
+        "cDC1": 16
+      },
+      "Myeloid": {
+        "Myeloid_spillover_Tumor": 36638,
+        "Macrophage_unpolarized": 24639,
+        "TREM2_TAM": 20868,
+        "Proliferating_myeloid": 15222,
+        "M1_macrophage": 13425,
+        "M2_macrophage": 13062,
+        "Myeloid_spillover_Fibroblast": 10943,
+        "Hypoxic_TAM": 8600,
+        "Monocyte_unspecified": 2714,
+        "Monocyte_classical": 653,
+        "Osteoclast_like_giant": 173
+      }
+    },
+    "seed": 0
+  },
+  "merge": {
+    "timestamp": "2026-10-03T16:06:06",
+    "n_fine_labels": 43,
+    "n_coarse_labels": 12,
+    "final_cell_type_counts": {
+      "Tumor_nonCSC": 484234,
+      "Unassigned": 75436,
+      "Ovarian_stroma": 58481,
+      "myCAF": 42068,
+      "Endothelial": 37772,
+      "apCAF": 37595,
+      "FB_unassigned": 37160,
+      "Myeloid_spillover_Tumor": 36638,
+      "iCAF": 32159,
+      "CSC_like": 30061,
+      "Macrophage_unpolarized": 24639,
+      "NK": 21456,
+      "TREM2_TAM": 20868,
+      "Plasma": 16702,
+      "CD4_T_unspecified": 15456,
+      "Proliferating_myeloid": 15222,
+      "M1_macrophage": 13425,
+      "M2_macrophage": 13062,
+      "Myeloid_spillover_Fibroblast": 10943,
+      "CD8_T_unspecified": 9412,
+      "Hypoxic_TAM": 8600,
+      "Macrophage_Mono": 8205,
+      "CD8_naive_memory": 5773,
+      "Treg": 5173,
+      "Bcell_spillover_Fibroblast": 4488,
+      "CD8_cytotoxic": 3274,
+      "Plasmablast": 3065,
+      "Monocyte_unspecified": 2714,
+      "Proliferating_T": 2236,
+      "CD4_Th_effector": 1738,
+      "mregDC": 1363,
+      "CD8_exhausted": 1274,
+      "Proliferating_B": 697,
+      "Monocyte_classical": 653,
+      "Memory_B": 387,
+      "T_NK": 361,
+      "Naive_B": 245,
+      "B_cell": 239,
+      "GC_B": 182,
+      "Osteoclast_like_giant": 173,
+      "Mesothelial": 140,
+      "pDC": 23,
+      "cDC1": 16
+    },
+    "inputs": {
+      "caf": true,
+      "csc": true,
+      "immune": [
+        "TNK",
+        "Bcell",
+        "Myeloid"
+      ]
+    }
+  },
+  "spatial_squidpy": {
+    "timestamp": "2026-10-03T16:17:25",
+    "graph": "delaunay",
+    "edge_cut_um": 38.54585641143864,
+    "edge_cut_pct": 99.0,
+    "n_edges": 3218866,
+    "n_perms": 100,
+    "label_key": "cell_type_fine",
+    "n_labels": 43,
+    "composition_groups": [
+      "CSC_like",
+      "Tumor_nonCSC"
+    ],
+    "seed": 0,
+    "versions": {
+      "annotation_st": "0.1.0",
+      "scanpy": "1.11.5",
+      "squidpy": "1.8.1",
+      "anndata": "0.12.7",
+      "numpy": "2.2.6",
+      "pandas": "2.3.3"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "annotation_st"
+version = "0.1.0"
+description = "Config-driven cell annotation pipeline for Xenium spatial transcriptomics (lineage, CAF, CSC, immune subtypes, spatial statistics)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Ji Wang", email = "gynecoloji@gmail.com" }]
+maintainers = [{ name = "Ji Wang", email = "gynecoloji@gmail.com" }]
+dependencies = [
+    "numpy",
+    "pandas",
+    "scipy",
+    "anndata>=0.10",
+    "scanpy>=1.10",
+    "squidpy>=1.4",
+    "pyyaml",
+    "matplotlib",
+    "h5py",
+    "pyarrow",
+    "igraph",
+    "leidenalg",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+spatioloji = ["spatioloji_s"]
+
+[project.scripts]
+annot-st = "annotation_st.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+annotation_st = ["data/marker_library/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::FutureWarning", "ignore::UserWarning", "ignore::DeprecationWarning"]
+markers = ["slow: long end-to-end runs with figures"]

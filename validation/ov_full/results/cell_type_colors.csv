@@ -1,0 +1,48 @@
+label,hex,level,tier,legend_group,coarse_type,n_cells_fine,n_cells_coarse
+Tumor_nonCSC,#0c82bf,fine,bright,Tumour epithelium,Epithelial_tumor,484234,0
+CSC_like,#e7e824,fine,bright,Tumour epithelium,Epithelial_tumor,30061,0
+Epithelial_tumor,#55120b,coarse,deep,Tumour epithelium,Epithelial_tumor,0,429906
+Epithelial_tumor_cycling,#fe1bf6,coarse,bright,Tumour epithelium,Epithelial_tumor_cycling,0,84389
+iCAF,#df500c,fine,bright,Fibroblast / CAF,Fibroblast,32159,0
+myCAF,#5ef9f1,fine,bright,Fibroblast / CAF,Fibroblast,42068,0
+apCAF,#4b67fa,fine,bright,Fibroblast / CAF,Fibroblast,37595,0
+FB_unassigned,#0d371a,fine,deep,Fibroblast / CAF,Fibroblast,37160,0
+Fibroblast,#80027c,coarse,deep,Fibroblast / CAF,Fibroblast,0,148982
+Ovarian_stroma,#46ac2a,fine+coarse,bright,Other stroma,Ovarian_stroma,58481,58481
+Endothelial,#ac1cf1,fine+coarse,bright,Other stroma,Endothelial,37772,37772
+Mesothelial,#d71f75,fine+coarse,bright,Other stroma,Mesothelial,140,140
+CD8_cytotoxic,#bd7fe8,fine,bright,T cell,T_NK,3274,0
+CD8_exhausted,#5cd73c,fine,bright,T cell,T_NK,1274,0
+CD8_naive_memory,#b16512,fine,bright,T cell,T_NK,5773,0
+CD8_T_unspecified,#15068a,fine,deep,T cell,T_NK,9412,0
+CD4_Th_effector,#48d7fe,fine,bright,T cell,T_NK,1738,0
+Treg,#fec766,fine,bright,T cell,T_NK,5173,0
+CD4_T_unspecified,#711a4c,fine,deep,T cell,T_NK,15456,0
+Proliferating_T,#9df7b0,fine,bright,T cell,T_NK,2236,0
+T_NK,#1f6a96,fine+coarse,deep,T cell,T_NK,361,73189
+NK,#3bc59e,fine,bright,NK cell,T_NK,21456,0
+Naive_B,#9262b3,fine,bright,B lineage,B_cell,245,0
+Memory_B,#b5d519,fine,bright,B lineage,B_cell,387,0
+GC_B,#fc6b33,fine,bright,B lineage,B_cell,182,0
+B_cell,#0d2f4f,fine+coarse,deep,B lineage,B_cell,239,1750
+Proliferating_B,#718516,fine,bright,B lineage,B_cell,697,0
+Plasmablast,#e9a8f8,fine,bright,B lineage,Plasma,3065,0
+Plasma,#49dfc7,fine+coarse,bright,B lineage,Plasma,16702,24255
+M1_macrophage,#cc6f9d,fine,bright,Myeloid: macrophage / monocyte,Macrophage_Mono,13425,0
+M2_macrophage,#acf93f,fine,bright,Myeloid: macrophage / monocyte,Macrophage_Mono,13062,0
+TREM2_TAM,#3d9028,fine,bright,Myeloid: macrophage / monocyte,Macrophage_Mono,20868,0
+Hypoxic_TAM,#1770f9,fine,bright,Myeloid: macrophage / monocyte,Macrophage_Mono,8600,0
+Macrophage_unpolarized,#540f22,fine,deep,Myeloid: macrophage / monocyte,Macrophage_Mono,24639,0
+Monocyte_classical,#22cde5,fine,bright,Myeloid: macrophage / monocyte,Macrophage_Mono,653,0
+Monocyte_unspecified,#8901a1,fine,deep,Myeloid: macrophage / monocyte,Macrophage_Mono,2714,0
+Proliferating_myeloid,#d838f9,fine,bright,Myeloid: macrophage / monocyte,Macrophage_Mono,15222,0
+Osteoclast_like_giant,#fd9cf5,fine,bright,Myeloid: macrophage / monocyte,Macrophage_Mono,173,0
+Macrophage_Mono,#9b4805,fine+coarse,deep,Myeloid: macrophage / monocyte,T_NK,8205,149469
+mregDC,#b18e15,fine,bright,Myeloid: dendritic cell,T_NK,1363,0
+cDC1,#7e55f0,fine,bright,Myeloid: dendritic cell,Dendritic,16,0
+pDC,#ff71bb,fine,bright,Myeloid: dendritic cell,Dendritic,23,0
+Dendritic,#137738,coarse,deep,Myeloid: dendritic cell,Dendritic,0,39
+Unassigned,#bdbdbd,fine+coarse,grey,Unresolved / QC,Unassigned,75436,75436
+Myeloid_spillover_Tumor,#717171,fine,grey,Unresolved / QC,Macrophage_Mono,36638,0
+Myeloid_spillover_Fibroblast,#9c99a3,fine,grey,Unresolved / QC,Macrophage_Mono,10943,0
+Bcell_spillover_Fibroblast,#d6e0e7,fine,grey,Unresolved / QC,Plasma,4488,0

@@ -1,0 +1,16 @@
+# ── Language statistics ─────────────────────────────────────────────────
+# Keep the shipped data tables out of GitHub's language bar so the repo reads as Python.
+src/annotation_st/data/**   linguist-generated
+configs/*.csv               linguist-generated
+tools/*.tsv                 linguist-generated
+
+# ── Line endings ────────────────────────────────────────────────────────
+* text=auto eol=lf
+*.py        text eol=lf
+*.sh        text eol=lf
+*.sbatch    text eol=lf
+*.yaml      text eol=lf
+*.yml       text eol=lf
+*.tsv       text eol=lf
+*.csv       text eol=lf
+*.json      text eol=lf

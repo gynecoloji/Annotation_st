@@ -1,0 +1,6 @@
+caf_subtype_cell	n_ref	n_new	n_both	recall	precision	jaccard
+FB_unassigned	37160	37160	37160	1.0	1.0	1.0
+NA	934826	934826	934826	1.0	1.0	1.0
+apCAF	37595	37595	37595	1.0	1.0	1.0
+iCAF	32159	32159	32159	1.0	1.0	1.0
+myCAF	42068	42068	42068	1.0	1.0	1.0

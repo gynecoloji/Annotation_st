@@ -1,0 +1,39 @@
+{
+ "spatioloji_s": "0.5.1",
+ "from_xenium_s": 72.1,
+ "n_cells": [
+  1157659,
+  1157659
+ ],
+ "n_genes": [
+  5001,
+  5001
+ ],
+ "n_control_features": 5028,
+ "same_cells": true,
+ "same_genes": true,
+ "counts_identical": true,
+ "neg_probe_counts_identical": true,
+ "neg_codeword_counts_identical": true,
+ "genomic_ctrl_counts_identical": true,
+ "unassigned_codeword_counts_h5_identical": true,
+ "deprecated_codeword_counts_h5_identical": true,
+ "coordinates_identical": true,
+ "columns_written": [
+  "lineage",
+  "cell_type",
+  "cell_type_fine",
+  "caf_subtype_cell",
+  "csc_status",
+  "immune_compartment",
+  "immune_subtype",
+  "csc_OCSC_z",
+  "annot_leiden"
+ ],
+ "n_labelled": 1083808,
+ "n_NA": 73851,
+ "labels_identical": true,
+ "palette_matches_run_colour_table": true,
+ "n_palette_entries": 44,
+ "spatioloji_plot": "ok"
+}

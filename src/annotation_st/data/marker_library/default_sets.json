@@ -1,0 +1,690 @@
+{
+ "lineage/Epithelial_tumor": [
+  "EPCAM",
+  "PAX8",
+  "WT1",
+  "MUC16",
+  "SOX17",
+  "CLDN7",
+  "CDH1",
+  "MUC1",
+  "FOLR1",
+  "ERBB2",
+  "MSLN"
+ ],
+ "lineage/Fibroblast": [
+  "PDGFRA",
+  "FAP",
+  "THY1",
+  "COL11A1",
+  "COL5A1",
+  "COL5A2",
+  "FBLN2",
+  "FBLN5",
+  "POSTN",
+  "CTHRC1",
+  "SFRP4",
+  "PI16",
+  "MFAP5",
+  "DPT",
+  "LRRC15",
+  "MMP11",
+  "PRRX1",
+  "LOX",
+  "ASPN",
+  "TWIST2",
+  "CDH11"
+ ],
+ "lineage/Pericyte_SMC": [
+  "RGS5",
+  "MCAM",
+  "NOTCH3",
+  "CSPG4",
+  "KCNJ8",
+  "ABCC9",
+  "PDGFRB"
+ ],
+ "lineage/Endothelial": [
+  "PECAM1",
+  "CDH5",
+  "CLDN5",
+  "KDR",
+  "PLVAP",
+  "ENG",
+  "TEK",
+  "ERG",
+  "SOX18"
+ ],
+ "lineage/Lymphatic_EC": [
+  "PROX1",
+  "FLT4",
+  "PDPN",
+  "PECAM1"
+ ],
+ "lineage/T_NK": [
+  "CD3E",
+  "CD3G",
+  "CD2",
+  "CD247",
+  "CD4",
+  "CD8A",
+  "CD8B",
+  "GZMB",
+  "GZMK",
+  "GZMA",
+  "PRF1",
+  "KLRD1",
+  "KLRB1",
+  "FOXP3",
+  "IL2RA",
+  "CTLA4",
+  "PDCD1",
+  "TIGIT",
+  "CCR7",
+  "SELL"
+ ],
+ "lineage/B_cell": [
+  "MS4A1",
+  "CD79A",
+  "CD79B",
+  "CD19",
+  "BANK1",
+  "PAX5",
+  "CD22"
+ ],
+ "lineage/Plasma": [
+  "MZB1",
+  "XBP1",
+  "PRDM1",
+  "TNFRSF17",
+  "DERL3",
+  "FCRL5",
+  "CD38"
+ ],
+ "lineage/Macrophage_Mono": [
+  "CD68",
+  "CD163",
+  "CD14",
+  "FCGR3A",
+  "MRC1",
+  "MSR1",
+  "TREM2",
+  "CSF1R",
+  "ITGAM",
+  "MARCO",
+  "FOLR2",
+  "SIGLEC1"
+ ],
+ "lineage/Dendritic": [
+  "CD1C",
+  "CLEC10A",
+  "FCER1A",
+  "CLEC9A",
+  "XCR1",
+  "LAMP3",
+  "LILRA4",
+  "CLEC4C",
+  "IL3RA"
+ ],
+ "lineage/Neutrophil": [
+  "CSF3R",
+  "FCGR3B",
+  "CD177"
+ ],
+ "lineage/Mast": [
+  "MS4A2",
+  "HDC",
+  "HPGDS",
+  "GATA2",
+  "KIT"
+ ],
+ "lineage/Mesothelial": [
+  "UPK3B",
+  "CALB2",
+  "PRG4",
+  "PTGIS",
+  "MSLN"
+ ],
+ "lineage/Ovarian_stroma": [
+  "FOXL2",
+  "NR5A1",
+  "STAR",
+  "CYP17A1",
+  "AMH",
+  "ARX",
+  "TCF21",
+  "DLK1",
+  "GATA4"
+ ],
+ "lineage/Adipocyte": [
+  "PLIN1",
+  "ADIPOQ",
+  "LEP"
+ ],
+ "lineage/Schwann": [
+  "MPZ",
+  "SOX10"
+ ],
+ "proliferation/Proliferating": [
+  "MKI67",
+  "TOP2A",
+  "CDK1",
+  "BIRC5",
+  "CCNB1"
+ ],
+ "csc/CSC": [
+  "CD44",
+  "PROM1",
+  "KIT",
+  "LGR5",
+  "SOX2",
+  "POU5F1",
+  "NANOG",
+  "ABCG2",
+  "NES",
+  "LIN28A",
+  "LIN28B",
+  "BMI1",
+  "CXCR4"
+ ],
+ "spillover/spillover_Tumor": [
+  "EPCAM",
+  "PAX8",
+  "WT1",
+  "MUC16",
+  "SOX17",
+  "CLDN7",
+  "CDH1",
+  "MUC1",
+  "FOLR1",
+  "MSLN",
+  "BCAM"
+ ],
+ "spillover/spillover_Fibroblast": [
+  "PDGFRA",
+  "FAP",
+  "THY1",
+  "COL11A1",
+  "COL5A1",
+  "COL5A2",
+  "POSTN",
+  "CTHRC1",
+  "SFRP4",
+  "MMP11",
+  "AEBP1",
+  "LTBP2",
+  "THBS2",
+  "CDH11"
+ ],
+ "spillover/spillover_Endothelial": [
+  "PECAM1",
+  "CDH5",
+  "CLDN5",
+  "KDR",
+  "PLVAP",
+  "ENG",
+  "TEK",
+  "ERG",
+  "SOX18",
+  "CD34"
+ ],
+ "TNK.level1/CD8_T": [
+  "CD8A",
+  "CD8B"
+ ],
+ "TNK.level1/CD4_T": [
+  "CD4",
+  "CD40LG",
+  "FOXP3",
+  "IL2RA",
+  "CXCR5",
+  "ICOS"
+ ],
+ "TNK.level1/NK": [
+  "KLRD1",
+  "KLRF1",
+  "NCR1",
+  "NCAM1",
+  "FCGR3A",
+  "KLRC1",
+  "KLRK1",
+  "XCL2",
+  "XCL1"
+ ],
+ "TNK.level1/gdT_MAIT": [
+  "TRDC",
+  "TRGC1",
+  "TRGC2",
+  "KLRB1",
+  "IL18R1",
+  "SLC4A10"
+ ],
+ "TNK.level1/B_cell": [
+  "MS4A1",
+  "CD79A",
+  "CD79B",
+  "CD19",
+  "BANK1",
+  "PAX5",
+  "CD22"
+ ],
+ "TNK.level1/Plasma": [
+  "MZB1",
+  "XBP1",
+  "PRDM1",
+  "TNFRSF17",
+  "DERL3",
+  "CD38"
+ ],
+ "TNK.level1/mregDC": [
+  "LAMP3",
+  "CCL19",
+  "FSCN1",
+  "CD83",
+  "CD274",
+  "CCR7"
+ ],
+ "TNK.level1/Proliferating_T": [
+  "MKI67",
+  "TOP2A",
+  "AURKB",
+  "RRM2"
+ ],
+ "TNK.level1/cross_Myeloid": [
+  "CD14",
+  "CD68",
+  "CSF1R",
+  "MSR1",
+  "CD163",
+  "SIGLEC1",
+  "ITGAM",
+  "MRC1",
+  "SLCO2B1"
+ ],
+ "TNK.level2.CD8_T/CD8_cytotoxic": [
+  "GZMB",
+  "GZMA",
+  "GZMH",
+  "GZMK",
+  "PRF1",
+  "KLRG1",
+  "CX3CR1",
+  "FGFBP2",
+  "IFNG",
+  "NKG7",
+  "GNLY"
+ ],
+ "TNK.level2.CD8_T/CD8_exhausted": [
+  "PDCD1",
+  "LAG3",
+  "HAVCR2",
+  "TIGIT",
+  "CTLA4",
+  "TOX",
+  "CXCL13",
+  "ENTPD1",
+  "TNFRSF9",
+  "LAYN"
+ ],
+ "TNK.level2.CD8_T/CD8_naive_memory": [
+  "CCR7",
+  "SELL",
+  "TCF7",
+  "LEF1",
+  "IL7R"
+ ],
+ "TNK.level2.CD4_T/Treg": [
+  "FOXP3",
+  "IL2RA",
+  "CTLA4",
+  "IKZF2",
+  "TNFRSF18",
+  "CCR8",
+  "TNFRSF4"
+ ],
+ "TNK.level2.CD4_T/Tfh": [
+  "CXCL13",
+  "CXCR5",
+  "BCL6",
+  "PDCD1",
+  "ICOS",
+  "IL21"
+ ],
+ "TNK.level2.CD4_T/CD4_Th_effector": [
+  "TBX21",
+  "IFNG",
+  "GATA3",
+  "RORC",
+  "IL17A",
+  "IL2",
+  "CD40LG"
+ ],
+ "TNK.level2.CD4_T/CD4_naive_memory": [
+  "CCR7",
+  "SELL",
+  "TCF7",
+  "LEF1",
+  "IL7R"
+ ],
+ "Bcell.level1/B_cell": [
+  "MS4A1",
+  "CD79A",
+  "CD79B",
+  "CD19",
+  "BANK1",
+  "PAX5",
+  "CD22",
+  "CIITA"
+ ],
+ "Bcell.level1/Plasma": [
+  "MZB1",
+  "XBP1",
+  "PRDM1",
+  "TNFRSF17",
+  "DERL3",
+  "CD38",
+  "IRF4",
+  "POU2AF1"
+ ],
+ "Bcell.level1/Proliferating_B": [
+  "MKI67",
+  "TOP2A",
+  "AURKB",
+  "RRM2"
+ ],
+ "Bcell.level1/pDC": [
+  "LILRA4",
+  "CLEC4C",
+  "IL3RA",
+  "TCF4",
+  "IRF7"
+ ],
+ "Bcell.level1/cDC1": [
+  "CLEC9A",
+  "XCR1",
+  "BATF3",
+  "IRF8",
+  "CADM1"
+ ],
+ "Bcell.level1/cross_T": [
+  "CD3E",
+  "CD3G",
+  "CD2",
+  "CD247",
+  "CD8A",
+  "TRDC"
+ ],
+ "Bcell.level1/cross_Myeloid": [
+  "CD14",
+  "CD68",
+  "CSF1R",
+  "MSR1",
+  "CD163",
+  "SIGLEC1",
+  "ITGAM",
+  "MRC1",
+  "SLCO2B1"
+ ],
+ "Bcell.level2.B_cell/Naive_B": [
+  "TCL1A",
+  "FCER2",
+  "IL4R",
+  "BACH2",
+  "SELL",
+  "CCR7",
+  "IGHD",
+  "IGHM"
+ ],
+ "Bcell.level2.B_cell/Memory_B": [
+  "CD27",
+  "TNFRSF13B",
+  "CD80",
+  "CD86",
+  "ITGAX",
+  "TBX21",
+  "FCRL4",
+  "FCRL5",
+  "AIM2"
+ ],
+ "Bcell.level2.B_cell/GC_B": [
+  "BCL6",
+  "AICDA",
+  "LMO2",
+  "SUGCT",
+  "SERPINA9",
+  "CD38",
+  "MKI67",
+  "RGS13"
+ ],
+ "Bcell.level2.Plasma/Plasmablast": [
+  "MKI67",
+  "TOP2A"
+ ],
+ "Myeloid.level1/Macrophage": [
+  "CD68",
+  "CD163",
+  "MRC1",
+  "MSR1",
+  "CSF1R",
+  "MARCO",
+  "FOLR2",
+  "TREM2",
+  "SIGLEC1",
+  "STAB1",
+  "SLCO2B1",
+  "C1QA",
+  "C1QB"
+ ],
+ "Myeloid.level1/Monocyte": [
+  "FCN1",
+  "CCR2",
+  "SELL",
+  "LILRB2",
+  "CDKN1C",
+  "CX3CR1",
+  "S100A8",
+  "S100A9",
+  "VCAN"
+ ],
+ "Myeloid.level1/cDC": [
+  "CD1C",
+  "CLEC10A",
+  "FCER1A",
+  "CD1E",
+  "CLEC9A",
+  "XCR1",
+  "BATF3",
+  "LAMP3",
+  "CCL19",
+  "FSCN1",
+  "CD83"
+ ],
+ "Myeloid.level1/pDC": [
+  "LILRA4",
+  "CLEC4C",
+  "IL3RA",
+  "TCF4",
+  "IRF7"
+ ],
+ "Myeloid.level1/Neutrophil": [
+  "CSF3R",
+  "FCGR3B",
+  "CD177",
+  "CXCR2",
+  "CXCR1",
+  "S100A8"
+ ],
+ "Myeloid.level1/Mast": [
+  "KIT",
+  "MS4A2",
+  "HDC",
+  "HPGDS",
+  "GATA2",
+  "TPSAB1"
+ ],
+ "Myeloid.level1/Osteoclast_like_giant": [
+  "ACP5",
+  "CTSK",
+  "NFATC1",
+  "TNFRSF11A",
+  "ATP6V0D2",
+  "OCSTAMP",
+  "DCSTAMP"
+ ],
+ "Myeloid.level1/Proliferating_myeloid": [
+  "MKI67",
+  "TOP2A",
+  "AURKB",
+  "RRM2"
+ ],
+ "Myeloid.level1/cross_T": [
+  "CD3E",
+  "CD3G",
+  "CD2",
+  "CD247",
+  "CD8A",
+  "TRDC"
+ ],
+ "Myeloid.level2.Macrophage/M1_macrophage": [
+  "CD86",
+  "CD80",
+  "IL1B",
+  "TNF",
+  "CXCL9",
+  "CXCL10",
+  "CXCL11",
+  "STAT1",
+  "NOS2",
+  "IL6",
+  "SOCS3",
+  "GBP1",
+  "GBP5",
+  "CCL5"
+ ],
+ "Myeloid.level2.Macrophage/M2_macrophage": [
+  "CD163",
+  "MRC1",
+  "FOLR2",
+  "CD209",
+  "IL10",
+  "TGFB1",
+  "CCL18",
+  "CCL22",
+  "F13A1",
+  "STAB1",
+  "SELENOP",
+  "LYVE1",
+  "SLC40A1"
+ ],
+ "Myeloid.level2.Macrophage/TREM2_TAM": [
+  "TREM2",
+  "LIPA",
+  "GPNMB",
+  "APOE",
+  "APOC1",
+  "SPP1",
+  "LGALS3",
+  "FABP5",
+  "LGMN",
+  "CTSL"
+ ],
+ "Myeloid.level2.Macrophage/Hypoxic_TAM": [
+  "SLC2A1",
+  "HK2",
+  "ADM",
+  "LDHA",
+  "PGK1",
+  "VEGFA"
+ ],
+ "Myeloid.level2.Monocyte/Monocyte_classical": [
+  "CD14",
+  "FCN1",
+  "CCR2",
+  "SELL",
+  "S100A8",
+  "S100A9",
+  "VCAN",
+  "LYZ"
+ ],
+ "Myeloid.level2.Monocyte/Monocyte_nonclassical": [
+  "FCGR3A",
+  "CX3CR1",
+  "LILRB2",
+  "CDKN1C"
+ ],
+ "Myeloid.level2.cDC/cDC1": [
+  "CLEC9A",
+  "XCR1",
+  "BATF3",
+  "IRF8",
+  "CADM1"
+ ],
+ "Myeloid.level2.cDC/cDC2": [
+  "CD1C",
+  "CLEC10A",
+  "FCER1A",
+  "CD1E"
+ ],
+ "Myeloid.level2.cDC/mregDC": [
+  "LAMP3",
+  "CCR7",
+  "CCL19",
+  "FSCN1",
+  "CD274",
+  "CD83"
+ ],
+ "caf/iCAF": [
+  "LMNA",
+  "CLU",
+  "HAS1",
+  "CFD",
+  "CXCL12",
+  "EMP1",
+  "CXCL2",
+  "CCL2",
+  "DPT",
+  "PLA2G2A",
+  "SOD2",
+  "IL6",
+  "HAS2",
+  "IL8",
+  "CXCL1"
+ ],
+ "caf/myCAF": [
+  "MYL9",
+  "CALD1",
+  "MMP11",
+  "HOPX",
+  "IGFBP7",
+  "TPM2",
+  "CTHRC1",
+  "ACTA2",
+  "TAGLN",
+  "INHBA",
+  "COL10A1",
+  "TPM1",
+  "POSTN",
+  "CST1"
+ ],
+ "caf/apCAF": [
+  "CD74",
+  "HLA-DRA",
+  "HLA-DRB1",
+  "HLA-DRB5",
+  "HLA-DPA1",
+  "HLA-DPB1",
+  "HLA-DQA1",
+  "HLA-DQB1",
+  "HLA-DMA",
+  "SLPI",
+  "SAA1",
+  "PDPN",
+  "CLU",
+  "XBP1",
+  "STAT1",
+  "IRF5",
+  "NFE2L2",
+  "BCAM",
+  "F11R"
+ ]
+}
