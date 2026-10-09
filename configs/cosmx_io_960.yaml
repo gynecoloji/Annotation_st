@@ -1,0 +1,108 @@
+# NanoString CosMx SMI, 1000-plex IO / Universal Cell Characterization panel
+# (960 genes + 19 NegPrb controls), verified against Run5452_S2.
+#
+# NOT the Xenium library. Porting it gives Epithelial_tumor 3/11 and Ovarian_stroma 1/4:
+# this panel carries no PAX8, WT1, MUC16, SOX17, MUC1, FOLR1 or MSLN, so ovarian-carcinoma
+# identity cannot be established from it. Labels are therefore lineage-level, and the
+# epithelial set is named Epithelial rather than Epithelial_tumor.
+#
+# CAF and CSC marker sets are omitted so those stages self-skip (pipeline.py:219,263).
+#
+# This config is driven through spatioloji_bridge.annotate(), which hands annotation_st a
+# live object, so project.xenium_dir / project.spatioloji stay null. `annot-st validate`
+# must therefore be scoped to the stages the bridge runs:
+#     annot-st validate -c configs/cosmx_io_960.yaml --stages lineage immune merge
+# Unscoped, it correctly reports "no input is set" for the file-driven qc stage.
+project:
+  name: cosmx_io_960
+  spatioloji: null          # set at call time; the notebook uses the bridge in memory
+  outdir: /easley/scratch/projects/amitra/amitra2016502/annotation_st_runs/cosmx_ov
+  prefix: cosmx_ov
+  seed: 0
+  n_jobs: 16
+  figures: true
+qc:
+  # spatioloji_qc has already filtered with CosmxQCConfig. Left true, annotation_st would
+  # re-filter with Xenium-shaped defaults, three of which silently no-op on CosMx:
+  # area_outlier needs cell_area (CosMx has Area), no_nucleus needs nucleus_count (absent),
+  # and high_control_frac recognises only Xenium control names.
+  apply_filters: false
+  subsample: 0
+  min_transcripts: 20
+  min_genes: 10
+  max_control_frac: 0.10
+  area_pct: [1.0, 99.0]
+  require_nucleus: false
+  min_cells_per_gene: 10
+lineage:
+  n_pcs: 50
+  n_neighbors: 15
+  resolution: 1.0
+  min_z: 0.5
+  cycling_z: 1.0
+  umap_cells: 300000
+  skip_umap: false
+  cycling_lineage: Epithelial
+  cycling_label: Epithelial_cycling
+  unassigned: Unassigned
+immune:
+  compartments: null
+  n_pcs: 30
+  n_neighbors: 15
+  resolution: 1.5
+  min_z: 0.5
+  low_identity: -0.5
+  resolution2: 1.0
+  min_z2: 0.25
+  spill_flag: 1.0
+  umap_cells: 200000
+  min_cells: 100
+  min_cells_level2: 50
+spatial:
+  n_perms: 100
+  radius: 0.0
+  edge_cut_pct: 99.0
+  fine_key: cell_type_fine
+  composition_groups: [Epithelial, Fibroblast]
+plot:
+  legend_groups:
+    Epithelium: [Epithelial, Epithelial_cycling]
+    Stroma: [Fibroblast, Pericyte_SMC, Endothelial]
+    'T / NK': [CD8_cytotoxic, CD8_exhausted, CD8_naive_memory, CD8_T_unspecified, CD8_T,
+      CD4_Th_effector, Treg, Tfh, CD4_naive_memory, CD4_T_unspecified, CD4_T, gdT_MAIT,
+      Proliferating_T, T_NK, NK]
+    'B lineage': [Naive_B, Memory_B, GC_B, B_cell, Proliferating_B, Plasmablast, Plasma]
+    Myeloid: [M1_macrophage, M2_macrophage, TREM2_TAM, Hypoxic_TAM, Macrophage_unpolarized,
+      Macrophage, Monocyte_classical, Monocyte_nonclassical, Monocyte_unspecified, Monocyte,
+      Proliferating_myeloid, Osteoclast_like_giant, Macrophage_Mono, mregDC, cDC1, cDC2,
+      cDC_unspecified, cDC, pDC, Dendritic, Neutrophil, Mast]
+    'Unresolved / QC': [Unassigned, Immune_mixed, T_NK_unresolved, B_lineage_unresolved,
+      Myeloid_unresolved, Myeloid_spillover_Fibroblast, TNK_spillover_Fibroblast,
+      Bcell_spillover_Fibroblast, Myeloid_spillover_Endothelial, TNK_spillover_Endothelial,
+      Bcell_spillover_Endothelial]
+  qc_group: 'Unresolved / QC'
+  generic_labels: [Epithelial, Fibroblast, T_NK, B_cell, Macrophage_Mono, Dendritic,
+    CD4_T, CD8_T, Macrophage, Monocyte, cDC]
+  palette_file: null
+  colors: {}
+markers:
+  lineage:
+    Epithelial: [EPCAM, CDH1, KRT8, KRT18, KRT19, KRT7, CLDN4, CEACAM6, ERBB2]
+    Fibroblast: [COL1A1, COL1A2, COL3A1, COL5A1, DCN, LUM, PDGFRA, PDGFRB, FN1]
+    Pericyte_SMC: [RGS5, ACTA2, TAGLN, NOTCH3, MYH11]
+    Endothelial: [PECAM1, CDH5, VWF, CD34, KDR, ENG, RAMP2]
+    T_NK: [CD3D, CD3E, CD3G, CD2, CD4, CD8A, IL7R, FOXP3, GZMA, GZMB, GZMK, NKG7, KLRB1, PRF1]
+    B_cell: [MS4A1, CD79A, CD19, IGHD, IGHM]
+    Plasma: [MZB1, XBP1, JCHAIN, IGHG1, IGHG2, IGHA1, CD38]
+    Macrophage_Mono: [CD14, CD68, CD163, CSF1R, MRC1, ITGAX, LYZ, C1QA, C1QB, C1QC]
+    # Retained at the user's direction despite thin coverage. Dendritic shares ITGAX with
+    # the macrophage set and may be absorbed into it; Mast rests on three genes. Both
+    # outcomes are reported in the notebook rather than hidden.
+    Dendritic: [CLEC10A, LAMP3, IL3RA, ITGAX]
+    Mast: [KIT, TPSAB1, CPA3]
+    Neutrophil: [CSF3R, S100A8, S100A9, CXCR2]
+  proliferation: [MKI67, TOP2A, CDK1, BIRC5, CCNB1]
+  spillover:
+    spillover_Fibroblast: [COL1A1, COL1A2, COL3A1, DCN, LUM, FN1]
+    spillover_Endothelial: [PECAM1, CDH5, VWF, CD34, KDR]
+  compartments: default
