@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "annotation_st"
-version = "0.1.0"
+version = "0.2.0"
 description = "Config-driven cell annotation pipeline for Xenium spatial transcriptomics (lineage, CAF, CSC, immune subtypes, spatial statistics)"
 readme = "README.md"
 requires-python = ">=3.10"

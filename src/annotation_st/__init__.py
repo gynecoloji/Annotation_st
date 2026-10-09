@@ -13,5 +13,5 @@ Stages (each also a library function):
 from .config import PipelineConfig, default_config, dump_config, load_config, preset_config
 
 # Bumped automatically by release-please on each release — do not edit by hand.
-__version__ = "0.1.0"  # x-release-please-version
+__version__ = "0.2.0"  # x-release-please-version
 __all__ = ["PipelineConfig", "default_config", "preset_config", "dump_config", "load_config", "__version__"]
